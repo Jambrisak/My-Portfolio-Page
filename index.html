@@ -4,9 +4,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jambrisak.com</title>
+    <script src="https://kit.fontawesome.com/adea6e81d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+<!--Landing Page Section-->
+    <div class="header">
+        <div class="container">
+            <nav>
+                    <img src="./images/logo/logo_transparent_background.png" alt="My logo" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Software Developer</p>
+                <h1>Hi, I'm <span>Philip</span><br>Jambrisak From Sweden</h1>
+            </div>
+        </div>
+    </div>
+    <!--About section-->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/Personal/Philip 2223.png" alt="Picture of me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm a newly examined Full Stack Developer. 
+                    During the time I studied Full Stack Software Development via Code Institute. 
+                    I also did an education from Meta via Coursera and also in Full Stack Development. 
+                    Excluding this, I also did 8 courses via Udemy.
+                    I did all this because I wanted to solidify my knowledge, and also because repetition makes perfection.
+                    Besides learning to become a Full Stack Developer, I worked as a qualifed teacher in Sweden. 
+                    I specialized in History and Religion, due to me having a fascination with those subjects. 
+                    I have 3 years of experience working as a teacher.
+                    Some key things about me. I'm a workaholic, I'm a perfectionist, I am a team player, I'm self-critical and as my team leader where I worked called me, I'm a soldier.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <span><h3>1+ Year</h3></span>
+                                <i class="fa-brands fa-html5 fa-2x"></i>
+                                <i class="fa-brands fa-css3-alt fa-2x"></i>
+                                <i class="fa-brands fa-python fa-2x"></i>
+                                <i class="fa-brands fa-js fa-2x"></i>
+                                <i class="fa-brands fa-bootstrap fa-2x"></i>
+                                <i class="fa-brands fa-uikit fa-2x"></i>
+                                <i class="fa-brands fa-aws fa-2x"></i>
+                                <i class="fa-brands fa-stripe fa-2x"></i>
+                                <i class="fa-brands fa-google fa-2x"></i>
+                                <i class="fa-brands fa-git fa-2x"></i>
+                                <i class="fa-brands fa-github fa-2x"></i>
+                                <p>And more</p>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <span><h3>Coming Soon</h3></span>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <span><h3>2022</h3></span>
+                            <a href="https://codeinstitute.net/se/full-stack-software-development-diploma/" taget="_blank"><li>Diploma in Full Stack Software Development, <span>Code Institute</span></li></a>
+                            <a href="#" taget="_blank"><li>Front-End Developer Professional Certificate, <span>Meta</span></li></a>
+                            <a href="#" taget="_blank"><li>Beginner to Advanced HTML5 and CSS3, <span>Udemy</span></li></a>
+                            <a href="#" taget="_blank"><li>The Complete Web Developer in: Zero to Mastery, <span>Udemy</span></li></a>
+                            <a href="#" taget="_blank"><li>The Ultimate Fullstack Web Development Bootcamp, <span>Udemy</span></li></a>
+                            <a href="#" taget="_blank"><li>The Complete Web Development Bootcamp, <span>Udemy</span></li></a>
+                            <a href="#" taget="_blank"><li>The Complete JavaScript Course: From Zero to Expert!, <span>Udemy</span></li></a>
+                            <a href="#" taget="_blank"><li>Build Responsive Real-World Websites with HTML and CSS, <span>Udemy</span></li></a>
+                            <a href="#" taget="_blank"><li>The Modern Javascript Bootcamp Course, <span>Udemy</span></li></a>
+                            <a href="#" taget="_blank"><li>100 Days of Code: The Complete Python Pro Bootcamp, <span>Udemy</span></li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------Service section------------>
+<div class="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-microscope"></i>
+                <h2>Research</h2>
+                <p>Understand the client’s subject matter completely and build on the knowledge related to it, 
+                becoming intimately familiar with the subject matter. 
+                Determine methods to address the specific customer’s needs and requirements.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-clip"></i>
+                <h2>Design</h2>
+                <p>Misleadingly thought of as the superficial appearance of a product,
+                design actually encompasses a lot more. 
+                It is a cross functional process that includes market research, technical research, 
+                design of a concept, and prototype mockup.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-connectdevelop"></i>
+                <h2>Develop</h2>
+                <p>Findings from the research and design phases are utilized for the 
+                production of specific products including materials, systems, 
+                and methods. Engineer utilizing the research and designs to produce 
+                commercial products for the customer.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
 </body>
 </html>
