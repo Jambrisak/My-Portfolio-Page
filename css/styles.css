@@ -126,14 +126,36 @@ header ul li a:hover::after {
     color: white;
     font-weight: 500;
 }
+
+/*About me page styling*/
+.about-me-container {
+    background-color: #f7f7f7;
+}
+.about-me-container .about-me-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-me-container .about-me-content .about-me-box {
+    max-width: calc(50% - 40px);
+    padding: 60px 40px;
+    margin: 20px;
+}
+.about-me-container .about-me-content .about-me-box img {
+    width: 50%;
+}
 .about-me-box ul li {
     list-style: none;
 }
-
-/*About me page styling*/
-
-
-/*Work page styling*/
+.about-me-box ul li a {
+    text-decoration: none;
+    color: red;
+}
+.about-me-box i {
+    font-size: 45px;
+    letter-spacing: 5px
+}
+/*Work section styling*/
 .work-container .work-content {
     display: flex;
     justify-content: space-between;
