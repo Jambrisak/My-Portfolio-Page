@@ -193,7 +193,7 @@ header ul li a:hover::after {
     padding: 20px;
 }
 .work-container .work-content .work-box img {
-    max-width: 100%;
+    width: 100%;
 }
 .work-container .work-content .work-box img:hover {
     opacity: 0.5;
@@ -286,117 +286,160 @@ header ul li a:hover::after {
     padding: 10px;
 }
 
-/*Responsive styles*/
-@media screen and (max-width: 1200px){
-    
-    header{
-        width: 100%;
+/*Responsive styles
+@media screen and (max-width: 1920px), screen and (max-height: 1080px){
+    header .logo{
+        font-size: 46px;
     }
-    .about-me-container {
-        width: 100%;
+    header {
+        font-size: 24px;
     }
-    .work-container {
-        width: 100%;
-    }
-    .contact {
-        width: 100%;
-    }
-    .footer {
-        width: 100%;
+    .front-page-container .text-box {
+        font-size: 24px;
     }
 }
-@media screen and (max-width: 1080px){
-    .contact-info{
-        width: 100px;
+@media screen and (max-width: 1440px), screen and (max-height: 900px){
+    header .logo{
+        font-size: 26px;
     }
-    
-}
-@media screen and (max-width: 950px){
-    .contact-info {
-        width: 35%;
+    header {
+        font-size: 20px;
     }
-    .form-box{
-        width: 25%;
+    .front-page-container .text-box {
+        font-size: 14px;
     }
 }
-@media screen and (max-width: 640px) {
-    header a{
-        width: 25px;
+@media screen and (max-width: 1366px), screen and (max-height: 768px){
+    header .logo{
+        font-size: 22px;
     }
-    .work-container .work-content .work-box{
-        width: 50%;
+    header {
+        font-size: 16px;
+    }
+    .front-page-container .text-box {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 720px), screen and (max-height: 1280px){
+    header .logo{
+        font-size: 22px;
+    }
+    header {
+        font-size: 16px;
+    }
+    .front-page-container .text-box {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 375px), screen and (max-height: 667px){
+    body {
+        width: 121%;
+    }
+    header .logo{
+        font-size: 10px;
+    }
+    header {
+        font-size: 10px;
+    }
+    .front-page-container .text-box {
+        font-size: 10px;
+    }
+    .about-me-container .about-me-content .about-me-box{
+        font-size: 10px;
+    }
+    .work-container .work-content {
+        display: grid;
     }
     .work-container .work-content .work-box img {
-        width: 100%;
+        width: 600%;
+        display: flex;
     }
-    .contact-info {
-        width: 55%;
-        align-items: center;
-        justify-content: center;
-    }
-    .form-box {
-        width: 10%;
-        align-items: center;
-        justify-content: center;
-    }
-}
-@media screen and (max-width: 500px) {
-    body {
-        width: 134%;
-    }
-    header .logo {
-        font-size: 12px;
-        font-weight: 1000;
-    }
-    header ul li a {
-        font-size: 12px;
-        right: 120px;
-        font-weight: 500;
-    }
-    .front-page-container h2 {
-        font-size: 2em;
-        width: 50%;
-    }
-    .heading{
-        width: 80%
-    }
-    .about-me-container .about-me-content .about-me-box {
-        width: 50%;
+    .work-container .work-content .work-box a {
+        display: column;
     }
     .about-me-container .about-me-content .about-me-box img {
-        width: 100px;
+        width: 200%;
     }
-    .work-container .work-content .work-box {
+}
+@media screen and (max-width: 414px), screen and (max-height: 896px){
+    body {
+        width: 121%;
+    }
+    header .logo{
+        font-size: 10px;
+    }
+    header {
+        font-size: 10px;
+    }
+    .front-page-container .text-box {
+        font-size: 10px;
+    }
+    .about-me-container .about-me-content .about-me-box{
+        font-size: 10px;
+    }
+    .work-container .work-content {
+        display: grid;
+    }
+    .work-container .work-content .work-box img {
+        width: 600%;
+        display: flex;
+    }
+    .work-container .work-content .work-box a {
+        display: column;
+    }
+    .about-me-container .about-me-content .about-me-box img {
+        width: 130%;
+    }
+}
+@media screen and (max-width: 360px), screen and (max-height: 640px){
+    .about-me-container .about-me-content .about-me-box{
+        display: block;
+        margin: 10px;
+    }
+    .about-me-container .about-me-content .about-me-box img {
+        display: none;
+    }
+}
+@media screen and (max-width: 820px), screen and (max-height: 1180px){
+    header .logo{
+        font-size: 12px;
+    }
+    header ul li{
+        font-size: 12px;
+        right: 300px;
+    }
+    .front-page-container .text-box {
+        font-size: 14px;
+    }
+    .heading {
+        font-size: 16px;
         width: 60%;
     }
-    .footer {
-        width: 75%;
+    .work-container .work-content{
+        display: grid;
+        width: 150%;
     }
 }
-@media screen and (max-width: 376px){
-    body {
-        width: 134%;
-    }
-    header .logo {
-        font-size: 12px;
-        font-weight: 1000;
-        right: -250px;
-    }
-    header ul li a {
-        font-size: 12px;
-        right: -50px;
-        font-weight: 500;
-    }
-    .front-page-container h2 {
-        font-size: 2em;;
-    }
-    .about-me-container .about-me-content .about-me-box {
-        max-width: 50%;
-    }
-    .about-me-container .about-me-content .about-me-box img {
-        width: 200px;
-    }
-    .work-container .work-content .work-box {
-        width: 50%;
+@media screen and (max-width: 768px), screen and (max-height: 1024px){
+    .front-page-container .text-box {
+        font-size: 10px;
     }
 }
+@media screen and (max-width: 912px), screen and (max-height: 1368px){
+    /*left to do Surface Pro 7
+}
+@media screen and (max-width: 540px), screen and (max-height: 720px){
+    /*left to do Surface Duo
+}
+@media screen and (max-width: 280px), screen and (max-height: 653px){
+    /*left to do Galaxy Fold
+}
+@media screen and (max-width: 412px), screen and (max-height: 914px){
+    /*left to do Galaxy A51/71
+}
+@media screen and (max-width: 1024px), screen and (max-height: 600px){
+    /*left to do Nest hub
+}
+@media screen and (max-width: 1280px), screen and (max-height: 800px){
+    /*left to do Nest hub
+}*/
