@@ -340,6 +340,39 @@ header ul li a:hover::after {
         justify-content: center;
     }
 }
+@media screen and (max-width: 500px) {
+    body {
+        width: 134%;
+    }
+    header .logo {
+        font-size: 12px;
+        font-weight: 1000;
+    }
+    header ul li a {
+        font-size: 12px;
+        right: 120px;
+        font-weight: 500;
+    }
+    .front-page-container h2 {
+        font-size: 2em;
+        width: 50%;
+    }
+    .heading{
+        width: 80%
+    }
+    .about-me-container .about-me-content .about-me-box {
+        width: 50%;
+    }
+    .about-me-container .about-me-content .about-me-box img {
+        width: 100px;
+    }
+    .work-container .work-content .work-box {
+        width: 60%;
+    }
+    .footer {
+        width: 75%;
+    }
+}
 @media screen and (max-width: 375px){
     body {
         width: 134%;
@@ -366,5 +399,4 @@ header ul li a:hover::after {
     .work-container .work-content .work-box {
         width: 50%;
     }
-
 }
