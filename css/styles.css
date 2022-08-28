@@ -167,6 +167,15 @@ header ul li a:hover::after {
 .work-container .work-content .work-box img {
     max-width: 100%;
 }
+.work-container .work-content .work-box img:hover {
+    opacity: 0.5;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
 
 /*Contact styling*/
 .contact-content {
