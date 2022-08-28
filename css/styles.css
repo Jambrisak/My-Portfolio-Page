@@ -260,3 +260,44 @@ header ul li a:hover::after {
     text-align: center;
     padding: 10px;
 }
+
+/*Responsive styles*/
+@media screen and (max-width: 1200px){
+    
+    header{
+        width: 100%;
+    }
+    .about-me-container {
+        width: 100%;
+    }
+    .work-container {
+        width: 100%;
+    }
+    .contact {
+        width: 100%;
+    }
+    .footer {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 950px){
+    .contact-info {
+        width: 35%;
+    }
+    .form-box{
+        width: 25%;
+    }
+}
+@media screen and (max-width: 640px) {
+    header a{
+        width: 25px;
+    }
+    .about-me-content .about-me-box{
+        width: 100%;
+        display: column;
+    }
+    .about-me-content .about-me-box img {
+        height: 100px;
+        width: 100px;
+    }
+}
