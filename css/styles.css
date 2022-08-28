@@ -146,7 +146,7 @@ header ul li a:hover::after {
     margin: 20px;
 }
 .about-me-container .about-me-content .about-me-box img {
-    width: 50%;
+    width: 100%;
 }
 .about-me-box ul li {
     list-style: none;
@@ -156,7 +156,7 @@ header ul li a:hover::after {
     color: red;
 }
 .about-me-box i {
-    font-size: 45px;
+    font-size: 2.5em;
     letter-spacing: 5px
 }
 /*Work section styling*/
