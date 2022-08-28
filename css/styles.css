@@ -46,6 +46,9 @@ img {
     margin-bottom: 30px;
     color: #111;
 }
+.contact {
+    background: #f7f7f7;
+}
 
 
 /*Header styling*/
@@ -167,4 +170,68 @@ header ul li a:hover::after {
 }
 .work-container .work-content .work-box img {
     max-width: 100%;
+}
+
+/*Contact styling*/
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-info-box .icon {
+    margin-bottom: 10px;
+    align-items: left;
+}
+.contact-info-box .icon a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Contact form styling*/
+.form-box {
+    min-width: 60%;
+}
+.form-box form {
+    display: flex;
+    flex-direction: column;
+}
+.form-box form h3,
+.contact-info h3 {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+.form-box form input,
+.form-box form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+.form-box form textarea {
+    min-height: 200px;
+}
+.form-box form input::placeholder,
+.form-box form textarea::placeholder{
+    color: #999;
+}
+.form-box form input[type="submit"]{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*Footer styling */
+.footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
