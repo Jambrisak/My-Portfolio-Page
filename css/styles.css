@@ -154,6 +154,9 @@ header ul li a:hover::after {
     font-size: 2.5em;
     letter-spacing: 5px;
 }
+.about-me-container .heading p span {
+    color: red;
+}
 /*Work section styling*/
 .work-container .work-content {
     display: flex;
