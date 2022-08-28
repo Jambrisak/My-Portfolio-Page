@@ -188,6 +188,23 @@ header ul li a:hover::after {
     color: black;
 }
 
+/*Contact btn*/
+.contact-content .btn-primary {
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+    border-radius: 15px;
+    border: 2px solid #2196f3;
+}
+.contact-content .btn-primary:focus {
+    box-shadow: none !important;
+}
+.contact-content .btn-primary:hover {
+    border: 2px solid black !important;
+    background: yellow !important;
+    transition: 0.3s;
+    color: black;
+}
+
 
 /*Contact form styling*/
 .form-box {

@@ -13,8 +13,8 @@
 <!--Header Section-->
     <header>
         <a href="#" class="logo">Philip Jambrisak</a>
-            <div class="navbar">
-                <ul>
+            <div class="toggle" onclick="toggleMenu();">
+                <ul class="menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#work">Work</a></li>
@@ -150,14 +150,17 @@
                             </p>
                         </div>
                     </div>
+                    <form method="get" action="./text/Philip-Jambrisak-CV.pdf">
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-download"></i>Resume</button>
+                    </form>
                 </div>
             </div>
             <div class="form-box">
-                <form>
+                <form action="https://formsubmit.co/philip@jambrisak.com" method="POST">
                    <h3>Message Me</h3>
-                   <input type="text" name="" placeholder="Full Name">
-                   <input type="email" name="" placeholder="Email">
-                   <textarea placeholder="Your Message"></textarea>
+                   <input type="text" name="Name" placeholder="Full Name" required>
+                   <input type="email" name="Email" placeholder="Email" required>
+                   <textarea name="Message" placeholder="Your Message" required></textarea>
                    <input type="submit" value="Send"> 
                 </form>
             </div>
@@ -171,6 +174,12 @@
         var header = document.querySelector('header');
         header.classList.toggle('sticky', window.scrollY > 0);
     });
+    function toggleMenu(){
+        var menuToggle = document.querySelector('.toggle');
+        var menu = document.querySelector('.menu');
+        menuToggle.classList.toggle('active');
+        menu.classList.toggle('active');
+    }
 </script>
 </body>
 </html>
