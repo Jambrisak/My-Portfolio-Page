@@ -103,7 +103,7 @@ header ul li a:hover::after {
 .front-page-container  {
     position: relative;
     min-height: 100vh;
-    background-image: url(../images/background.jpg);
+    background-image: url(/assets/images/background.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
