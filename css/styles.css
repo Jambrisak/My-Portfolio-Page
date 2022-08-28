@@ -39,9 +39,6 @@ header {
 .w50 {
     min-width: 50%;
 }
-img {
-    max-width: 100%;
-}
 .heading {
     width: 100%;
     text-align: center;
@@ -137,16 +134,14 @@ header ul li a:hover::after {
 }
 .about-me-container .about-me-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .about-me-container .about-me-content .about-me-box {
     max-width: calc(50% - 40px);
-    padding: 60px 40px;
-    margin: 20px;
 }
 .about-me-container .about-me-content .about-me-box img {
-    width: 100%;
+    width: 50%;
 }
 .about-me-box ul li {
     list-style: none;
@@ -157,7 +152,7 @@ header ul li a:hover::after {
 }
 .about-me-box i {
     font-size: 2.5em;
-    letter-spacing: 5px
+    letter-spacing: 5px;
 }
 /*Work section styling*/
 .work-container .work-content {
