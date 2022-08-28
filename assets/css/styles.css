@@ -295,9 +295,9 @@ header ul li a:hover::after {
     .about-me-content .about-me-box{
         width: 100%;
         display: column;
+        display: inline-block;
     }
     .about-me-content .about-me-box img {
-        height: 100px;
-        width: 100px;
+        display: inline-block;
     }
 }
