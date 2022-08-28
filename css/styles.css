@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 section {
     padding: 100px;
@@ -165,7 +166,7 @@ header ul li a:hover::after {
     flex-wrap: wrap;
 }
 .work-container .work-content .work-box {
-    width: 50%;
+    width: 25%;
     padding: 20px;
 }
 .work-container .work-content .work-box img {
