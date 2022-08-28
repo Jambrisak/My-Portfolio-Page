@@ -141,7 +141,7 @@ header ul li a:hover::after {
     max-width: calc(50% - 40px);
 }
 .about-me-container .about-me-content .about-me-box img {
-    width: 50%;
+    width: 100%;
 }
 .about-me-box ul li {
     list-style: none;
@@ -280,6 +280,12 @@ header ul li a:hover::after {
         width: 100%;
     }
 }
+@media screen and (max-width: 1080px){
+    .contact-info{
+        width: 100px;
+    }
+    
+}
 @media screen and (max-width: 950px){
     .contact-info {
         width: 35%;
@@ -292,12 +298,31 @@ header ul li a:hover::after {
     header a{
         width: 25px;
     }
-    .about-me-content .about-me-box{
-        width: 100%;
-        display: column;
-        display: inline-block;
+    .work-container .work-content .work-box{
+        width: 50%;
     }
-    .about-me-content .about-me-box img {
-        display: inline-block;
+    .work-container .work-content .work-box img {
+        width: 100%;
+    }
+    .contact-info {
+        width: 55%;
+        align-items: center;
+        justify-content: center;
+    }
+    .form-box {
+        width: 10%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 375px){
+    body {
+        width: 125%;
+    }
+    header {
+        width: 100%;
+    }
+    header a {
+        width: 50%;
     }
 }
