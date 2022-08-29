@@ -1,101 +1,123 @@
 /*Universal Style*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+/*Universal styling*/
+body {
+    background-color: #f6f5f5;
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-section {
-    padding: 100px;
 }
 
-/*landing page styling*/
-.landing-page {
-    position: relative;
-    min-height: 100vh;
-    background: url(../images/background.jpg);
-    background-size: cover;
-    background-position: right;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.landing-page h2 {
-    font-size: 3em;
-    color: #fff;
-    font-weight: 500;
-    line-height: 1.5em;
-}
-.landing-page h3 {
-    font-size: 1.5em;
-    color: #fff;
-    font-weight: 500;
-    line-height: 1.5em;
-}
-/*header styling*/
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header .logo{
-    color: #fff;
-    font-size: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-header ul {
-    position: relative;
-    display: flex;
-}
-header ul li {
-    position: relative;
+/*Ul styling*/
+ul {
     list-style: none;
 }
-header ul li a {
-    position: relative;
-    display: inline-block;
-    margin: 0 15px;
-    color: #fff;
+/*A styling*/
+a{
     text-decoration: none;
 }
-/*about me styling*/
-.heading {
+/*section styling*/
+section {
     width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #111;
+    height: 95vh;
+    background-image: url(../../assets/images/background/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
-.heading h2 {
-    font-weight: 600;
-    font-size: 30px;
-}
-.content{
+/*nav styling*/
+nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 0 5%;
 }
-.contentBox {
-    padding-right: 30px;
+nav ul {
+    display: flex;
 }
-.contentBox h3{
-    font-size: 24px;
-    margin-bottom: 10px;
+nav ul li a {
+    margin: 30px;
+    font-family: 'poppins', sans-serif;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 700;
 }
-.w50 {
-    min-width: 50%;
+/*logo styling*/
+.logo {
+    font-family: 'poppins', sans-serif;
+    color: #000000;
+    font-size: 22px;
 }
-img {
-    max-width: 75%;
+/*active styling*/
+.active{
+    font-weight: bold;
+    color: #2d2a2a;
+}
+/*text styling*/
+.text-container{
+    position: absolute;
+    left: 13%;
+    top: 42%;
+    transform: translate(-13%, -42%);
+}
+.text-container p {
+    line-height: 0;
+    margin: 45px 0px 25px;
+}
+.text-container p:nth-child(1) {
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    color: White;
+    font-size: 22px;
+}
+.text-container p:nth-child(2) {
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: White;
+    font-size: 60px;
+}
+.text-container p:nth-child(3) {
+    font-family: 'poppins', sans-serif;
+    color: White;
+    font-size: 30px;
+    line-height: 30px;
+}
+/*text buttons*/
+.text-container button{
+    width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 0px 10px;
+}
+button:active{
+    transform: scale(1.1);
+}
+/*about section*/
+.about-container{
+    width: 80%;
+    height: 330px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin: -7% auto 20px auto;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-container img {
+    height: 250px;
+}
+.about.text {
+    width: 550px;
 }
 
 

@@ -10,68 +10,50 @@
     <script src="https://kit.fontawesome.com/adea6e81d4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<!--Header Section-->
-<header>
-    <a href="#" class="logo">Philip Jambrisak</a>
-        <div class="toggle">
-        </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-</header>
-<section class="landing-page">
-    <div class="textBx">
-        <h2>Hello, I'm Philip Jambrisak</h2>
-        <h3>I'm a Full Stack Developer</h3>
-        <h2>Page is under Construction</h2>
+<!--Main Section------------------------------------------------>
+<section>
+<!--Navigation-------------------------------------------------->
+    <nav>
+<!--Logo-------------------------------------------------------->
+        <a href="#" class="logo">Philip Jambrisak</a>
+<!--Menu-------------------------------------------------------->
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+<!--Text-------------------------------------------------------->
+    <div class="text-container">
+        <p>Hello,</p>
+        <p>I'm Philip Jambrisak, from Sweden.</p>
+        <p>I'm a Full Stack Developer</p>
+        <button class="hire-btn">Hire me</button>
+        <button class="down-cv">Download CV</button>
     </div>
 </section>
-<!--About me section-->
-<section class="about">
-    <div class="heading">
-        <h2>About Me</h2>
-    </div>
-    <div class="content">
-        <div class="contentBox w50">
-            <h3>Who am i?</h3>
-            <p>I'm a Full Stack Developer with an education from Code Institute and Meta.</p>
-            <p>I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p>
-            <p>Some key things to know about me. 
-            I'm a workaholic, I'm a perfectionist, 
-            I’m a team player, and I'm self-critical, 
-            I’m always interested in learning.
-            <h3>Education</h3>
-            <p>2022 - <a href="">Code Institute</a></p>
-            <p>2022 - <a href="">Coursera/Meta</a></p>
-            <p>2022 - <a href="">Udemy</a></p>
-            <p>2022 - <a href="">Udemy</a></p>
-            <p>2022 - <a href="">Udemy</a></p>
-            <p>2022 - <a href="">Udemy</a></p>
-            <p>2022 - <a href="">Udemy</a></p>
-            <p>2022 - <a href="">Udemy</a></p>
-            <p>2022 - <a href="">Udemy</a></p>
-            <p>2022 - <a href="">Udemy</a></p>
-            <h3>Knowledge</h3>
-            <i class="fa-brands fa-js fa-2x"></i>
-            <i class="fa-brands fa-html5 fa-2x"></i>
-            <i class="fa-brands fa-python fa-2x"></i>
-            <i class="fa-brands fa-css3-alt fa-2x"></i>
-            <i class="fa-solid fa-database fa-2x"></i>
-            <i class="fa-brands fa-angular fa-2x"></i>
-            <i class="fa-brands fa-react fa-2x"></i>
-            <i class="fa-brands fa-node-js fa-2x"></i>
-            <i class="fa-brands fa-uikit fa-2x"></i>
-        </div>
-        <div class="w50">
-            <img src="./assets/images/personal/Philip-2223.png" alt="Picture of me" class="img">
+<!--About Section----------------------------------------------->
+    <div class="about-container">
+<!--Image------------------------------------------------------->
+        <img src="./assets/images/personal/Philip-2223.png" alt="photo of me">
+<!--About-Text-------------------------------------------------->
+        <div class="about-text">
+            <p>About Me</p>
+            <p>Full Stack & Front End Developer</p>
+            <p>Hello, My name is Philip Jambrisak and I'am a developer. Some key things to know about me. 
+            I'm a workaholic, I'm a perfectionist, I’m a team player, and I'm self-critical, 
+            I’m always interested in learning.</p>
+            <p>The reason that I’m working with Full Stack/Front-End and Back End because it’s a passion.</p>
+            <p>Education</p>
+            <p>Full Stack Software - Code Institute - 2022</p><p>Front End - Coursera/Meta - 2022</p>
+<!--About button------------------------------------------------>
+            <button>Hire Me</button>
+            <button>Download CV</button>
         </div>
     </div>
-</section>
-<!--Contact Section-->
+
+<!--Contact Section
     <section class="contact" id="contact">
             <div class="form-box">
                 <form action="https://formsubmit.co/eeda1aba5d324bc3ff93692df24c69c6" method="POST">
@@ -98,6 +80,6 @@
         var header = document.querySelector('header');
         header.classList.toggle('sticky', window.scrollY > 0);
     });
-</script>
+</script>-->
 </body>
 </html>
