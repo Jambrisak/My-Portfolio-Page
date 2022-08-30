@@ -83,13 +83,11 @@ header.sticky ul li a{
 }
 /*for active-link.js */
 .active {
-    content:'';
-    width: 0;
+    width: 100%;
     height: 3px;
     background: #ff004f;
     position: absolute;
     left: 0;
-    bottom: -6px;
 }
 header ul li a::after{
     content:'';
