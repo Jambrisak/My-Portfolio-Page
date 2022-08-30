@@ -115,6 +115,7 @@ header ul li a::after{
 header ul li a:hover::after{
     width: 100%;
 }
+
 /*about me section styling                          */
     /*heading styling                                */
 .heading{
