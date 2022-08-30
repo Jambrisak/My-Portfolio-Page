@@ -148,6 +148,12 @@ img{
 }
 .portfolio .content .portfolioBx img {
     max-width: 100%;
+    transition: 0.9s;
+}
+/*portfolio image styling                       */
+.imageBx:hover{
+    opacity: 0.6;
+    transform: scale(.7);
 }
 /*contact section styling                      */
 /*form box                                     */
