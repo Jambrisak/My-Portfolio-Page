@@ -211,6 +211,13 @@ img{
     align-items: flex-start;
     font-size: 24px;
 }
+.contactInfoBx .icon a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    display: inline-block;
+    margin: -6px 0;
+}
 .contactInfoBx .box .text h3 {
     font-weight: 500;
     color: #2196f3;
