@@ -33,6 +33,27 @@ section{
     color: white;
     font-weight: 500;
 }
+.landing-btn{
+    position: relative;
+    background: white;
+    display: inline-block;
+    color: black;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.landing-btn:hover{
+    color: white;
+    background: black;
+    display: inline-block;
+    
+}
 /*Header styling                                     */
 header{
     position: fixed;
@@ -117,6 +138,27 @@ header ul li a:hover::after{
 .contentBx h3{
     font-size: 24px;
     margin-bottom: 10px;
+}
+.contentBx p span {
+    color: red;
+    font-weight: bold;
+}
+.contentBx a {
+    color: black;
+    text-decoration: none;
+}
+.contentBx i {
+    margin-right: 15px;
+    display: inline-block;
+    transition: 0.5s smooth;
+}
+.contentBx i {
+    margin-right: 15px;
+    transition: 0.5s smooth;
+}
+.contentBx i:hover{
+    transform: scale(.9);
+    color: red;
 }
 /*image about me styling                          */
 img{
@@ -303,6 +345,12 @@ img{
     }
     .landing-page h3 {
         font-size: 1em;
+    }
+    /*landing page button style                                 */
+    .landing-btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
     }
     /*heading responsive                                        */
     .heading h2{
