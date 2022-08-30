@@ -6,24 +6,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/adea6e81d4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--Navbar-->
+    <!--Navbar-------------------------------------------------------------------------------------------------------------------------------------------------->
     <header>
-        <a href="#" class="logo">Philip</a>
+        <a href="#home" class="logo">MajorJammbaa</a>
         <div class="toggle"></div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
     </header>
-    <!--Front page image and text-->
-        <section class="landing-page">
+    <!--Front page image and text-------------------------------------------------------------------------------------------------------------------------------------------------->
+    <section class="landing-page" id="home">
             <div class="textBx">
                 <h2>Hello, I'm Philip Jambrisak.</h2>
                 <h3>I'm a Full Stack Developer.</h3>
             </div>
-        </section> 
+    </section> 
+    <!--About section------------------------------------------------------------------------------------------------------------------------------------------------->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>I'm a Full Stack Developer.</h3>
+                <p>I am a newly Code Institute graduaded Full Stack Developer who has developed projects using HTML/CSS, JavaScript, Python. 
+                I specialize in building applications specific to the e-commerce needs of my clients. 
+                I plan on doing work in software development, mobile app creation, front-end/back-end web, database/server management.
+                But would also love to get into game development, because i spend my early teens playing alot of games.
+                Some key things to know about me. I'm a workaholic, I'm a perfectionist, I’m a team player, and I'm self-critical, 
+                I’m always interested in learning. The reason that I’m interested in working with Full Stack/Front-End and Back End because it’s a passion.
+                </p>
+                <h3>Education</h3>
+                <p>Full Stack Software Development - Code Institute</p>
+                <p>Front End Development - Meta</p>
+                <h3>Skills</h3>
+                <i class="fa-brands fa-square-js fa-3x"></i>
+                <i class="fa-brands fa-python fa-3x"></i>
+                <i class="fa-brands fa-html5 fa-3x"></i>
+                <i class="fa-brands fa-css3-alt fa-3x"></i>
+            </div>
+            <div class="w50">
+                <img src="./assets/images/personal/Philip.png" alt="picture of me" class="img">
+            </div>
+        </div>
+    </section>
+    <!--Portfolio section------------------------------------------------------------------------------------------------------------------------------------------------->
+    <section class="portfolio" id="portfolio">
+        <div class="heading">
+            <h2>My latest work</h2>
+            <p>Here you will find my latest projects.</p>
+        </div>
+        <div class="content">
+            <div class="portfolioBx">
+                <img src="./assets/images/portfolio/coming-soon-1.jpg" alt="Photo by Cottonbro - Pexels.com">
+            </div>
+            <div class="portfolioBx">
+                <img src="./assets/images/portfolio/coming-soon-2.jpg" alt="Photo by alleksana - Pexels.com">
+            </div>
+            <div class="portfolioBx">
+                <img src="./assets/images/portfolio/coming-soon-3.jpg" alt="Photo by Pixabay - Pexels.com">
+            </div>
+            <div class="portfolioBx">
+                <img src="./assets/images/portfolio/coming-soon-4.jpg" alt="Photo by Vie Studio - Pexels.com">
+            </div>
+        </div>
+    </section>
+    <!--Contact section------------------------------------------------------------------------------------------------------------------------------------------------->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact Me</h2>
+            <p>Here you will find my contact info, and a contact form that goes directly to my email.</p>
+        </div>
+        <div class="content">
+    <!--Contact info section------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="text">
+                            <h3>philip@jambrisak.com</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-square-phone"></i></div>
+                        <div class="text">
+                            <h3>+46 (0) 738994900</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                        <div class="text">
+                            <h3>//Philip Jambrisak</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa-brands fa-square-github"></i></div>
+                        <div class="text">
+                            <h3>//Jambrisak</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!--Contact form section------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="formBx">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" name ="" placeholder="Full Name" required>
+                    <input type="email" name ="" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Footer section------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="footer">
+        <p>copyright &copy;Philp Jambrisak, 2022. All Right Reserved</p>
+    </div>
+<script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+    });
+</script>
 </body>
 </html>
