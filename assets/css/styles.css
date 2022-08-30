@@ -81,6 +81,16 @@ header ul li a {
 header.sticky ul li a{
     color: black;
 }
+/*for active-link.js */
+.active {
+    content:'';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
 header ul li a::after{
     content:'';
     width: 0;
