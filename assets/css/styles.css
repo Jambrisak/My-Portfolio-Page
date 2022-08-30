@@ -11,7 +11,7 @@
 section{
     padding: 100px;
 }
-/*Front section styling*/
+/*Front section styling                                */
 .landing-page{
     position: relative;
     min-height: 100vh;
@@ -33,7 +33,7 @@ section{
     color: white;
     font-weight: 500;
 }
-/*Header styling*/
+/*Header styling                                     */
 header{
     position: fixed;
     top: 0;
@@ -46,7 +46,7 @@ header{
     align-items: center;
     transition: 0.5s;
 }
-/*header sticky in js*/
+/*header sticky in js                                */
 header.sticky{
     background: white;
     padding: 20px 100px;
@@ -94,8 +94,8 @@ header ul li a::after{
 header ul li a:hover::after{
     width: 100%;
 }
-/*about me section styling*/
-    /*heading styling*/
+/*about me section styling                          */
+    /*heading styling                                */
 .heading{
     width: 100%;
     text-align: center;
@@ -106,7 +106,7 @@ header ul li a:hover::after{
     font-size: 30px;
     font-weight: 600;
 }
-    /*content box styling*/
+    /*content box styling                          */
 .content{
     display: flex;
     justify-content: space-between;
@@ -118,14 +118,14 @@ header ul li a:hover::after{
     font-size: 24px;
     margin-bottom: 10px;
 }
-/*image about me styling*/
+/*image about me styling                          */
 img{
     max-width: 100%;
 }
 .w50{
     min-width: 50%;
 }
-/*portfolio section styling*/
+/*portfolio section styling                      */
 .portfolio{
     background: url(../images/background/background.jpg);
     background-size: cover;
@@ -149,8 +149,8 @@ img{
 .portfolio .content .portfolioBx img {
     max-width: 100%;
 }
-/*contact section styling*/
-/*form box*/
+/*contact section styling                      */
+/*form box                                     */
 .formBx{
     min-width: 60%;
 }
@@ -190,7 +190,7 @@ img{
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-/*contact info styling*/
+/*contact info styling                   */
 .contactInfo{
     min-width: 40%;
 }
@@ -223,7 +223,7 @@ img{
     color: #2196f3;
     margin-bottom: 0;
 }
-/*footer styling*/
+/*footer styling                          */
 .footer{
     background: black;
     color: white;
@@ -231,9 +231,9 @@ img{
     padding: 10px;
 }
 
-/*responsive*/
+/*responsive   991 px                                      */
 @media (max-width: 991px){
-    /*header responsive*/
+    /*header responsive                                   */
     header, header.sticky{
         padding: 20px 50px;
         z-index: 1000;
@@ -246,7 +246,7 @@ img{
     header.sticky .toggle{
         filter: invert(1);
     }
-    /*hamburger menu*/
+    /*hamburger menu                                       */
     .menu {
         position: fixed;
         top: 75px;
@@ -280,26 +280,29 @@ img{
         background-size: 25px;
         cursor: pointer;
     }
-    /*section responsive*/
+    /*section responsive                                        */
     section{
         padding: 100px 50px;
     }
-    /*header responsive*/
+    /*header responsive                                         */
     header .logo{
         font-size: 20px;
     }
-    /*landing page responsive*/
+    /*landing page responsive                                       */
+    .landing-page{
+        padding: 150px 50px 100px;
+    }
     .landing-page h2 {
         font-size: 1.5em;
     }
     .landing-page h3 {
         font-size: 1em;
     }
-    /*heading responsive*/
+    /*heading responsive                                        */
     .heading h2{
         font-size: 24px;
     }
-    /*about me responsive*/
+    /*about me responsive                                       */
     .contentBx{
         font-size: 12px;
     }
@@ -310,13 +313,30 @@ img{
         min-width: 50%;
         margin-bottom: 20px;
     }
-    /*portfolio boxes responsive*/
+    /*portfolio boxes responsive                                         */
     .portfolio .content .portfolioBx{
         width: 100%;
         padding: 10px;
     }
-    /*contact info responsive*/
+    /*contact info responsive                                 */
     .contactInfo{
         margin: 20px 0;
+    }
+}
+@media (max-width: 600px) {
+    /*header responsive                                         */
+    header, header.sticky{
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+    .landing-page{
+        padding: 150px 20px 100px;
+    }
+    .landing-page h2{
+        font-size: 2em;
+    }
+    /*Section responsive                                      */
+    section{
+        padding: 100px 20px;
     }
 }

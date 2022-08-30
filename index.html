@@ -1,9 +1,6 @@
 <!-----
-    1. Make Nav active  
-    2. Make Portfolio pic have hover = info/title and link to the projct
-    3. make site responsive and add hamburger menu
-    4. Make contact send to philip@jambrisak.com
-    5. Make Portfolio hover effect with text and icon that guides site.
+    2. Make Portfolio pic have hover = info/title and link to the projct, make Portfolio hover effect with text and icon that guides site.
+    3. Make hamburger icon switch
     6. Make under construction page
 -->
 
@@ -34,7 +31,7 @@
     <section class="landing-page" id="home">
             <div class="textBx">
                 <h2>Hello, I'm Philip Jambrisak.</h2>
-                <h3>I'm a Full Stack Developer.</h3>
+                <h3>I'm a Full Stack / Front End Developer.</h3>
             </div>
     </section> 
     <!--About section------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -126,11 +123,11 @@
             </div>
     <!--Contact form section------------------------------------------------------------------------------------------------------------------------------------------------->
             <div class="formBx">
-                <form>
+                <form action="https://formsubmit.co/eeda1aba5d324bc3ff93692df24c69c6" method="POST">
                     <h3>Message Me</h3>
-                    <input type="text" name ="" placeholder="Full Name" required>
-                    <input type="email" name ="" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message"></textarea>
+                    <input type="text" name ="fname" placeholder="Full Name" required>
+                    <input type="email" name ="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message"></textarea>
                     <input type="submit" value="Send">
                 </form>
             </div>
@@ -140,6 +137,7 @@
     <div class="footer">
         <p>copyright &copy;Philp Jambrisak, 2022. All Right Reserved</p>
     </div>
+<!--javascript taken from w3school-->
 <script type="text/javascript">
     window.addEventListener('scroll', function(){
         var header = document.querySelector('header');
