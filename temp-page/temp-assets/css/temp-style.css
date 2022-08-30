@@ -8,6 +8,7 @@ body{
     background: #000 url(../img/temp-background.jpg);
     background-size: cover;
     background-blend-mode: hard-light;
+    background-repeat: no-repeat;
 }
 /*Container styling*/
 .container{
@@ -18,6 +19,7 @@ body{
     bottom: 80px;
     background: url(../img/temp-background.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
