@@ -233,10 +233,16 @@ img{
 }
 .formBx form input[type="submit"]{
     max-width: 100px;
-    background: #2196f3;
+    background: black;
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 2px;
+    transition: 0.5s smooth;
+}
+.formBx form input[type="submit"]:hover{
+    color: black;
+    border: 1px solid black;
+    background: white;
 }
 /*contact info styling                   */
 .contactInfo{
