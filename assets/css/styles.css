@@ -72,6 +72,9 @@ header.sticky{
     background: white;
     padding: 20px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+header.sticky .logo{
+    color: black;
 } 
 header .logo{
     color: white;
@@ -80,9 +83,6 @@ header .logo{
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 2px;
-}
-header.sticky .logo{
-    color: black;
 }
 header ul {
     position: relative;
