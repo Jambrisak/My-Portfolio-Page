@@ -16,14 +16,14 @@
 <body>
     <!--Navbar-------------------------------------------------------------------------------------------------------------------------------------------------->
     <header>
-        <a href="#home" class="logo">MajorJammbaa</a>
+        <a href="#home" class="logo">Jambrisak</a>
         <div class="toggle" onclick="toggleMenu();"></div>
-        <ul class="menu">
-            <li><a id="menu-home" href="#home" onclick="toggleMenu(this)">Home</a></li>
-            <li><a href="#about" onclick="toggleMenu(this)">About</a></li>
-            <li><a href="#portfolio" onclick="toggleMenu(this)">Portfolio</a></li>
-            <li><a href="#contact" onclick="toggleMenu(this)">Contact</a></li>
-        </ul>
+            <ul class="menu">
+                <li><a class="active" href="#home" onclick="toggleMenu();">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu();">About</a></li>
+                <li><a href="#portfolio" onclick="toggleMenu();">Portfolio</a></li>
+                <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+            </ul>
     </header>
     <!--Front page image and text-------------------------------------------------------------------------------------------------------------------------------------------------->
     <section class="landing-page" id="home">
@@ -149,14 +149,12 @@
         var header = document.querySelector('header');
         header.classList.toggle('sticky', window.scrollY > 0);
     });
-    let elActiveAnchor = null;
-
-    function toggleMenu(elAnchor) {
-    elActiveAnchor?.classList.remove('active');
-    (elActiveAnchor = elAnchor).classList.add('active');
-    }
-
-toggleMenu(document.getElementById("menu-home"));
+    function toggleMenu(){
+        var menuToggle = document.querySelector('.toggle');
+        var menu = document.querySelector('.menu');
+        menuToggle.classList.toggle('active');
+        menu.classList.toggle('active');
+    };
 </script>
 </body>
 </html>
