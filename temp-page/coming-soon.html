@@ -1,58 +1,31 @@
-<!--todolist
-    1. Make site responsive
-
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comning Soon</title>
+    <title>Coming Soon</title>
     <link rel="stylesheet" href="./temp-assets/css/temp-style.css">
+    <script src="https://kit.fontawesome.com/adea6e81d4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <h2>Countdown to Next Project</h2>
-        <div class="countdown">
-            <div id="day">NA</div>
-            <div id="hour">NA</div>
-            <div id="minute">NA</div>
-            <div id="second">NA</div>
+    <!--Countdown section-->
+    <div class="countdown">
+        <div class="box">
+            <span class="num" id="day-box">00</span>
+            <span class="text">Days</span>
         </div>
-        <div class="icon">
-            <a href="../index.html"><i class="fa-solid fa-backward"></i></a>
+        <div class="box">
+            <span class="num" id="hr-box">00</span>
+            <span class="text">Hours</span>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <a href=".././index.html"><i class="fa-solid fa-angles-left fa-9x"></i></a>
+            </div>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/adea6e81d4.js" crossorigin="anonymous"></script>
-<!--JavaScript taken from w3school-->
-    <script type="text/javascript">
-        var countDate = new Date('Nov 12, 2022 00:00:00').getTime();
-
-        function newYear(){
-            var now = new Date().getTime();
-                gap = countDate - now;
-
-                var second = 1000;
-                var minute = second * 60;
-                var hour = minute * 60;
-                var day = hour * 24;
-
-                var d = Math.floor(gap / (day));
-                var h = Math.floor((gap % (day)) / (hour));
-                var m = Math.floor((gap % (hour)) / (minute));
-                var s = Math.floor((gap % (minute)) / (second));
-
-                document.getElementById('day').innerText = d;
-                document.getElementById('hour').innerText = h;
-                document.getElementById('minute').innerText = m;
-                document.getElementById('second').innerText = s;
-        }
-        setInterval(function(){
-            newYear();
-        },1000)
-    </script>
+<!--script section-->
+    <script src="./temp-assets/js/temp-main.js"></script>
 </body>
 </html>
