@@ -1,14 +1,4 @@
 <!--
-    Todo
-    1. meta description
-    2. meta keywords
-    3. Fix colors Passion - #b30037
-    4. HTML/CSS maybe italics add a span over them
-    5. Contact info box rename to contactinfo item /Linkdin and such. remove H3
-    6. use column-gap for it.
-    7. Download images again correct size Front page - 1600, portfolio less.
-    8. Remove temp
-    9. Fix contact text
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -16,12 +6,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Philip Jambrisak personal portfolio website, here you will learn more about the author of this portfolio. You will also see some of his work, and you can find his contact information">
     <title>Jambrisak.com</title>
+    <link rel="apple-touch-icon" href="/example.png">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="https://kit.fontawesome.com/adea6e81d4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--Navbar-------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--Navbar-->
     <header>
         <a href="#home" class="logo">MajorJammbaa</a>
         <div class="toggle" onclick="toggleMenu();"></div>
@@ -32,7 +24,7 @@
                 <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
             </ul>
     </header>
-    <!--Front page image and text-------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--Front page image and text-->
     <section class="landing-page" id="home">
             <div class="textBx">
                 <h2>Hello, I'm Philip Jambrisak.</h2>
@@ -40,7 +32,7 @@
                 <a href="./assets/text/Philip-Jambrisak-CV.pdf" download class="landing-btn">Resume</a>
             </div>
     </section> 
-    <!--About section------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--About section-->
     <section class="about" id="about">
         <div class="heading">
             <h2>About Me</h2>
@@ -48,16 +40,16 @@
         <div class="content">
             <div class="contentBx w50">
                 <h3>I'm a Full Stack / Front End Developer.</h3>
-                <p>I am a newly Code Institute graduated Full Stack Developer who has developed projects using HTML/CSS, JavaScript, Python. 
+                <p>I am a newly Code Institute graduated Full Stack Developer who has developed projects using <em>HTML/CSS</em>, <em>JavaScript</em>, <em>Python</em>. 
                 I specialize in building applications specific to the e-commerce needs of my clients. 
-                I plan on doing work in software development, mobile app creation, front/back-end web, database/server management.</p>
+                I plan on doing work in <em>software development</em>, <em>mobile app creation</em>, <em>front/back-end web</em>, <em>database/server management</em>.</p>
                 <p>But would also love to get into game development, because i spend my early teens playing a'lot of games.
                 Some key things to know about me. I'm a workaholic, I'm a perfectionist, I’m a team player, and I'm self-critical, 
                 I’m always interested in learning. The reason that I’m interested in working with Full Stack, Front/Back-End because it’s a <span>passion.</span>
                 </p>
-                <h3>Education</h3>
-                <p>Full Stack Software Development - <a href="https://codeinstitute.net/se/full-stack-software-development-diploma/"><i class="fa-regular fa-circle fa-1x"></i></i></p></a>
-                <p>Front End Development - <a href="https://www.coursera.org/professional-certificates/meta-front-end-developer"><i class="fa-brands fa-meta fa-1x"></i></p></a>
+                <h3>Education - 2022</h3>
+                <p>Full Stack Software Development - <a href="https://codeinstitute.net/se/full-stack-software-development-diploma/">Code Institute</a></p>
+                <p>Front End Development - <a href="https://www.coursera.org/professional-certificates/meta-front-end-developer">Meta</a></p>
                 <h3>Skills</h3>
                 <i class="fa-brands fa-square-js fa-3x"></i>
                 <i class="fa-brands fa-python fa-3x"></i>
@@ -71,63 +63,73 @@
                 <i class="fa-brands fa-node-js fa-3x"></i>
             </div>
             <div class="w50">
-                <img src="./assets/images/personal/Philip.png" alt="picture of me" class="img">
+                <img src="./assets/images/personal/Philip.png" height="512" width="502" alt="picture of me" class="img" rel="apple-touch-icon">
             </div>
         </div>
     </section>
-    <!--Portfolio section------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--Portfolio section-->
     <section class="portfolio" id="portfolio">
         <div class="heading">
             <h2>My Portfolio</h2>
-            <p>Click the images to see what I have done.</p>
+            <p>Watch for upcoming updates on my future projects.</p>
         </div>
         <div class="content">
             <div class="portfolioBx">
-                <a href="./temp-page/coming-soon.html"><img src="./assets/images/portfolio/coming-soon-1.jpg" class="imageBx" alt="Photo by Cottonbro - Pexels.com" >
-                </a>
+                <img src="./assets/images/portfolio/coming-soon.jpg" width="936" height="600" class="imageBx" alt="Photo by Vie Studio - Pexels.com">
             </div>
             <div class="portfolioBx">
-                <a href="./temp-page/coming-soon.html"><img src="./assets/images/portfolio/coming-soon-2.jpg" class="imageBx" alt="Photo by alleksana - Pexels.com"></a>
+                <img src="./assets/images/portfolio/coming-soon.jpg" width="936" height="600" class="imageBx" alt="Photo by Vie Studio - Pexels.com">
             </div>
             <div class="portfolioBx">
-                <a href="./temp-page/coming-soon.html"><img src="./assets/images/portfolio/coming-soon-3.jpg" class="imageBx" alt="Photo by Pixabay - Pexels.com"></a>
+                <img src="./assets/images/portfolio/coming-soon.jpg" width="936" height="600" class="imageBx" alt="Photo by Vie Studio - Pexels.com">
             </div>
             <div class="portfolioBx">
-                <a href="./temp-page/coming-soon.html"><img src="./assets/images/portfolio/coming-soon-4.jpg"  class="imageBx" alt="Photo by Vie Studio - Pexels.com"></a>
+                <img src="./assets/images/portfolio/coming-soon.jpg" width="936" height="600" class="imageBx" alt="Photo by Vie Studio - Pexels.com">
             </div>
         </div>
     </section>
-    <!--Contact section------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--Contact section-->
     <section class="contact" id="contact">
         <div class="heading">
             <h2>Contact Me</h2>
             <p>Here you will find my contact info, or you can send me a message.</p>
         </div>
         <div class="content">
-    <!--Contact info section------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--Contact info section-->
             <div class="contactInfo">
                 <h3>Contact Info</h3>
                 <div class="contactInfoBx">
                     <div class="box">
-                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-                        <div class="text">
-                            <h3>philip@jambrisak.com</h3>
+                        <div class="contactInfoIcon">
+                            <i class="fa-solid fa-envelope">
+                            </i>
+                            <span class="text">
+                                philip@jambrisak.com
+                            </span>
                         </div>
                     </div>
                     <div class="box">
-                        <div class="icon"><i class="fa-solid fa-square-phone"></i></div>
-                        <div class="text">
-                            <h3>+46 (0) 738994900</h3>
+                        <div class="contactInfoIcon">
+                            <i class="fa-solid fa-square-phone">
+                            </i>
+                            <span class="text">
+                                +46 (0) 738994900
+                            </span>
                         </div>
                     </div>
                     <div class="box">
-                        <div class="icon"><a href="https://www.linkedin.com/in/philip-jambrisak/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
-                        <div class="text">
-                            <h3>//Philip Jambrisak</h3>
+                        <div class="contactInfoIcon">
+                            <a href="https://www.linkedin.com/in/philip-jambrisak/" target="_blank">
+                                <i class="fa-brands fa-linkedin">
+                                </i>
+                                <span class="text">
+                                    //Philip Jambrisak
+                                </span>    
+                            </a>
                         </div>
                     </div>
                     <div class="box">
-                        <div class="icon">
+                        <div class="contactInfoIcon">
                             <a href="https://github.com/Jambrisak" target="_blank">
                                 <i class="fa-brands fa-square-github">  
                                 </i>
@@ -139,7 +141,7 @@
                     </div>
                 </div>
             </div>
-    <!--Contact form section------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--Contact form section-->
             <div class="formBx">
                 <form action="https://formsubmit.co/eeda1aba5d324bc3ff93692df24c69c6" method="POST">
                     <h3>Message Me</h3>
@@ -151,12 +153,12 @@
             </div>
         </div>
     </section>
-    <!--Footer section------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--Footer section-->
     <div class="footer">
         <p>copyright &copy;Philip Jambrisak, 2022. All Right Reserved</p>
     </div>
 <!--javascript taken from udemy : Course-->
-<script type="text/javascript">
+<script>
     window.addEventListener('scroll', function(){
         var header = document.querySelector('header');
         header.classList.toggle('sticky', window.scrollY > 0);
