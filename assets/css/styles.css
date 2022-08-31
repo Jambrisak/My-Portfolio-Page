@@ -15,7 +15,7 @@ section{
 .landing-page{
     position: relative;
     min-height: 100vh;
-    background: url(../images/background/background.jpg);
+    background: url(../images/background.jpg);
     background-size: cover;
     background-position: right;
     display: flex;
@@ -165,7 +165,7 @@ img{
 }
 /*portfolio section styling                      */
 .portfolio{
-    background: url(../images/background/background.jpg);
+    background: url(../images/background.jpg);
     background-size: cover;
     background-position: right;
 }
@@ -306,14 +306,14 @@ img{
     .toggle{
         width: 40px;
         height: 40px;
-        background: url(../images/menu/menu.png);
+        background: url(../images/menu.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 30px;
         cursor: pointer;
     }
     .toggle.active {
-        background: url(../images/menu/close.png);
+        background: url(../images/close.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 25px;
