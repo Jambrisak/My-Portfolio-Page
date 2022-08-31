@@ -115,6 +115,9 @@ header ul li a::after{
 header ul li a:hover::after{
     width: 100%;
 }
+header ul li a.active::after {
+    width: 100%;
+}
 
 /*about me section styling                          */
     /*heading styling                                */
@@ -285,6 +288,7 @@ img{
     text-align: center;
     padding: 10px;
 }
+/*responsive styling                                      */
 
 /*responsive   991 px                                      */
 @media (max-width: 991px){
