@@ -43,11 +43,13 @@ On this site future employers will find information about me, my journey, my cre
 ## Bugs
 ## Validator Testing
 - HTML test
+ ![HTML-Validator](https://user-images.githubusercontent.com/1257288/188002171-2b28c187-4ba3-4107-9076-c27741fef620.png)
 - CSS test
+ ![Jigsaw](https://user-images.githubusercontent.com/1257288/188002280-96776a93-6d6c-4739-952e-c29d81943f91.png)
 - Accessibility - Desktop
-![Lighthouse-Desktop](https://user-images.githubusercontent.com/1257288/188001215-3df48140-87df-499b-8ec7-295c88ded561.png)
+ ![Lighthouse-Desktop](https://user-images.githubusercontent.com/1257288/188001215-3df48140-87df-499b-8ec7-295c88ded561.png)
 - Accessibility - Mobile
-![Lighthouse-Mobile](https://user-images.githubusercontent.com/1257288/188001246-8fc7b5a4-5655-4247-8b6d-3ee07f63dc89.png)
+ ![Lighthouse-Mobile](https://user-images.githubusercontent.com/1257288/188001246-8fc7b5a4-5655-4247-8b6d-3ee07f63dc89.png)
 ## Unfixed Bugs
 ## Deployment
 - Live link - https://www.jambrisak.com
