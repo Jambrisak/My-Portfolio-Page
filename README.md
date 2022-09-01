@@ -1,4 +1,39 @@
-# The largest heading
+# Personal Portfolio
+I wanted to create a website that I could use for showcasing to future employers what I can do with HTML/CSS, this sites focus is on the future. What I aim is a good looking personal portfolio website, that will show to future employers that I not only care about the programming side but also the design aspect of web development.
+On this site future employers will find information about me, my journey, my credentiels and my skills. They will also see what my current or upccoming projects are in the portfolio section. And in the last page they will find information on how to contact me either through mail, phone or my social links. There will also be a contact form for sending me a message directly.
+  ![This is an image](https://www.linkpicture.com/view.php?img=LPic63105725eff96342622022) . img
+##Features
+1. Navigation
+
+1. The Header
+
+1. The About Me Section
+
+1. The Portfolio Section
+
+1. The Contact Me Section
+
+##Testing
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+##Bugs
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+##Validator Testing
+-
+##Unfixed Bugs
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+##Deployment
+1. This site was built using [GitHub Pages](https://pages.github.com/).
+##Credits
+###Content
+1. This site was built using [GitHub Pages](https://pages.github.com/).
+###Media
+1. This site was built using [GitHub Pages](https://pages.github.com/).
 ## The second largest heading
 ###### The smallest heading
 
@@ -8,35 +43,3 @@
 *This text is italicized*
 **This text is _extremely_ important**
 	***All this text is important***
-  This site was built using [GitHub Pages](https://pages.github.com/).
-  
-  [Contribution guidelines for this project](docs/CONTRIBUTING.md) - section
-  
-  ![This is an image](https://myoctocat.com/assets/images/base-octocat.svg) . img
-  
-  - George Washington
-- John Adams
-- Thomas Jefferson
-
-1. First list item
-   - First nested list item
-     - Second nested list item
-
-
-- [x] #739
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add delight to the experience when all tasks are complete :tada:
-
-
-Here is a simple footnote[^1].
-
-A footnote can also have multiple lines[^2].  
-
-You can also use words, to fit your writing style more closely[^note].
-
-[^1]: My reference.
-[^2]: Every new line should be prefixed with 2 spaces.  
-  This allows you to have a footnote with multiple lines.
-[^note]:
-    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
-    This footnote also has been made with a different syntax using 4 spaces for new lines.
