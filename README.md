@@ -128,19 +128,19 @@ This is the prototype of the project that will showcase the creators idea and th
 There will a wireframe for each section of the page, it may not show the entire picture since the creator did not think of a resume button and or using icons to showcase skills until after development was started.
 
 <details><summary>Home</summary>
-![background](https://user-images.githubusercontent.com/1257288/188180211-4072451d-699a-4345-a408-a37b4b5dd249.jpg)
+
 </details>
 <details><summary>About</summary>
-![background](https://user-images.githubusercontent.com/1257288/188180211-4072451d-699a-4345-a408-a37b4b5dd249.jpg)
+
 </details>
 <details><summary>Portfolio</summary>
-![background](https://user-images.githubusercontent.com/1257288/188180211-4072451d-699a-4345-a408-a37b4b5dd249.jpg)
+
 </details>
 <details><summary>Contact</summary>
-![background](https://user-images.githubusercontent.com/1257288/188180211-4072451d-699a-4345-a408-a37b4b5dd249.jpg)
+
 </details>
 <details><summary>Footer</summary>
-![background](https://user-images.githubusercontent.com/1257288/188180211-4072451d-699a-4345-a408-a37b4b5dd249.jpg)
+
 </details>
 
 [Back to top &uarr;](#jambrisak.com)
@@ -243,11 +243,11 @@ To test the performance on the website, I used Google Lighthouse in Google Chrom
 The test was carried out on computers and mobile devices.  
 Below is a list of screenshots:
 
-- Computer
+- Computer - 
 ![Lighthouse-Desktop](https://user-images.githubusercontent.com/1257288/188001215-3df48140-87df-499b-8ec7-295c88ded561.png)
 
 
-- Mobile
+- Mobile - 
 ![Lighthouse-Mobile](https://user-images.githubusercontent.com/1257288/188001246-8fc7b5a4-5655-4247-8b6d-3ee07f63dc89.png)
 
 
@@ -306,7 +306,7 @@ The website was deployed on a Google Domain by using following steps:
 5. [Sticky Navbar & Hamburger](https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22628657?start=15#overview) - This course over on Udemy taught by Jonas Schmedtmann taught me everything i need to know about how to use JavaScript for making a navbar Sticky and how to switch nav to a hamburger on lower resolutions.
 6. [Code Institute](https://codeinstitute.net/) - As the main source of my knowledge.
 7. [W3Schools](https://www.w3schools.com/) - An additional place where I often do additional courses or read articles and enrich my knowledge.
-8. [udemy](https://www.udemy.com) - - An additional place where I often do additional courses or read articles and enrich my knowledge.
+8. [udemy](https://www.udemy.com) - An additional place where I often do additional courses or read articles and enrich my knowledge.
 
 ## Acknowledgements
 Huge thanks to:
