@@ -96,15 +96,15 @@ and the same. So when u start scrolling you see that the navbar changes color to
 There are two other images on this page and one is of the creator and the other is an "coming soon" image that is a temporary image until the owner updates and add a picture and link to the next project.
 
 Below is a list of the photos used.
-<details><summary>Home</summary>
+### Background for Home & Portfolio
 ![background](https://user-images.githubusercontent.com/1257288/188180211-4072451d-699a-4345-a408-a37b4b5dd249.jpg)
-</details>
-<details><summary>Owner's picture</summary>
+
+### Owner's picture
 ![Philip](https://user-images.githubusercontent.com/1257288/188180329-efcb6db9-f8b3-41d0-8d4e-6179ba972f7c.png)
-</details>
-<details><summary>Owner's picture</summary>
+
+### Coming soon picture
 ![coming-soon](https://user-images.githubusercontent.com/1257288/188180345-933d342b-0f77-4a18-9a73-bc3be9fcab62.jpg)
-</details>
+
 
 ### Fonts
 'Poppins' regular 400 - taken from Google Fonts and apply via @import method to CSS file. 
