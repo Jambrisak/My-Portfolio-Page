@@ -2,7 +2,7 @@
 ### A personal portfolio site for Philip Jambrisak.
 #### (Developer: Philip Jambrisak aka [Jambrisak](https://github.com/jambrisak))
 ![AmIResponsive](https://user-images.githubusercontent.com/1257288/188001686-d83c33f2-77f6-4bf7-a4fa-f92ea33c97dd.png)
-[jambrisak - Live Webpage](https://www.jambrisak.com)(Right click top open in new tab)
+[jambrisak - Live Webpage](https://www.jambrisak.com) (Right click top open in new tab)
 
 This is my first project for [Code Institute](https://codeinstitute.bet) where I study for a diploma - <strong>LVL 5 in Full Stack Software Development. </strong>
 
@@ -178,3 +178,320 @@ There will a wireframe for each section of the page, it may not show the entire 
 The navigation bar is present on the entire website, it is easily noticeable, intuitive and easy to use. The
 navigation bar highlights the selected section where the user wants to go. There is also an effect when user scrolls down where the navigation size up and down and swtiches colors for the background and text.
 On the left side, there is a logo that.The navigation bar is responsive to mobile devices - it then turns into a common in-use "hamburger menu".
+
+
+
+
+
+
+
+
+
+
+## Stuff to ad
+
+## Features
+
+### Navigation Bar
+![NAVBAR](docs/features/feat-navbar.png)
+The navigation bar is present on all subpages of the website, it is easily noticeable, intuitive and easy to use. The
+navigation bar highlights the selected page where the user is located.
+On the left side, there is a logo that, when clicked, leads to the main page. The navigation bar is responsive to mobile
+devices - it then turns into a common in-use "hamburger menu".
+
+- User Stories covered: 2, 14, 16, 17
+
+### Hero Section & Restaurant Goals
+![HERO SECTION](docs/features/feat-hero_section.png)
+![Restaurant Goals](docs/features/feat-restaurant_goals.png)
+The section on the main page is a first eye-catcher. It contains a short description of the restaurant,
+thanks to which the user learns what cuisine the restaurant has to offer.
+In the section, we can see two buttons that lead to the menu of the restaurant and additional information about the
+restaurant.
+The section also includes logos and photo thumbnails for attention and additional visual effect.  
+
+Immediately below the section, there are restaurant goals, which are quick to read and are designed to arouse the
+curiosity and interest of the user to continue browsing the site and take advantage of the restaurant's offer.
+
+- User Stories covered: 1, 8, 14, 15, 17
+
+### Footer
+![FOOTER](docs/features/feat-footer.png)
+Footer, like the navigation bar, is present on all subpages and is responsive to mobile devices. It contains links to
+restaurant's profile on the most popular social media, opening hours, contact details and copyrights.  
+Links to social media are shown as icons, making it easy to find a platform that interests the user.
+The links open in a new browser tab, so the user stays on the restaurant's website.
+
+- User Stories covered: 5, 6, 7, 9, 10, 11, 13, 18, 20
+
+### About Us
+![ABOUT](docs/features/feat-about_us.png)
+The "about us" section gives the user a greater description of the restaurant, and a short history and encourages the
+organization of meetings and events in the restaurant.
+
+- User Stories covered: 1, 4, 5
+
+### Menu
+![MENU](docs/features/feat-menu.png)
+The section contains the restaurant's menu and is divided into categories. Each of the categories contains a drawing of
+the dish, which is hidden on mobile devices to ensure greater comfort in viewing the offer.  
+Each dish has a short description and price.
+
+- User Stories covered: 1, 3, 8, 15
+
+### Gallery & Video
+![GALLERY](docs/features/feat-gallery.png)
+![VIDEO](docs/features/feat-video.png)
+A section where the user can see photos of both meals and the interior of the restaurant.
+The photos are in grayscale, but when you hover over one of them, it zooms in and shows in full colour. This gives an
+interesting visual effect to the user.  
+Below is a short promotional video to encourage the user to take advantage of the restaurant's offer.
+
+
+- User Stories covered: 1, 15, 21
+
+### Contact Section
+![CONTACT SECTION](docs/features/feat-contact_section.png)
+Section where you can find a contact form that allows you to freely contact the restaurant online.  
+Next to the form, the user can find a map that shows exactly where the restaurant is located.
+
+- User Stories covered: 12, 19
+
+### 404 Page
+![CONTACT SECTION](docs/features/feat-404_page.png)
+The 404 page is the page for displaying the HTTP 404 error message. It informs the user that there is no resource at the
+URL entered.  
+This page has all the navigation, footer and an easily visible button thanks to which the user can quickly return to the
+home page.
+
+### Thank You - Page
+![CONTACT SECTION](docs/features/feat-thankyou_page.png)
+This page displays after submitting the form and informs the user that his inquiry or message has been successfully
+sent.  
+This page has all the navigation, footer and an easily visible button thanks to which the user can quickly return to the
+home page.
+
+### Favicon & Name on tab
+![CONTACT SECTION](docs/features/feat-page_card.png)  
+Each of the subpages has a favicon, the name of the restaurant and the subpage on which the user is currently located.
+Thanks to these additions, the user can easily locate the opened tab among others in his browser.
+
+[Back to top &uarr;](#ninja-ramen)
+<hr>
+
+## Validation
+
+### HTML Validation
+
+I used "W3C Markup Validation Service" to validate the code.  
+I validated each of the subpages and no error was found on any of them.
+
+<details><summary>Home</summary>
+<img src="docs/validation/validation-home.png" alt="Validation of Home-Page">
+</details>
+
+<details><summary>About</summary>
+<img src="docs/validation/validation-about.png" alt="Validation of About-Page">
+</details>
+
+<details><summary>Menu</summary>
+<img src="docs/validation/validation-menu.png" alt="Validation of Menu-Page">
+</details>
+
+<details><summary>Gallery</summary>
+<img src="docs/validation/validation-gallery.png" alt="Validation of Gallery-Page">
+</details>
+
+<details><summary>Contact</summary>
+<img src="docs/validation/validation-contact.png" alt="Validation of Contact-Page">
+</details>
+
+<details><summary>404</summary>
+<img src="docs/validation/validation-404.png" alt="Validation of 404-Page">
+</details>
+
+<details><summary>ThankYou</summary>
+<img src="docs/validation/validation-thankyou.png" alt="Validation of ThankYou-Page">
+</details>
+
+### CSS Validation
+
+I used "W3C CSS Validation Service" to validate the CSS code.
+
+I have performed two validations:
+
+1. The Whole page showed errors and alerts related to imported CSS stylesheet from Font Awesome but showed no errors
+   with my CSS.
+
+<details><summary>Whole Page</summary>
+<img src="docs/validation/validation_whole_page_css.png" alt="Validation of Whole Page CSS">
+</details>
+
+2. During the second validation I loaded my CSS file and the program did not find any errors related to my code, it only
+   suggested that the imported CSS sheet (google font) was not checked.
+
+<details><summary>My CSS file</summary>
+<img src="docs/validation/validation-my_css.png" alt="Validation of My CSS file">
+</details>
+
+## Testing
+
+### Accessibility
+
+I used "The WAVE WebAIM web accessibility evaluation tool" to test the code for accessibility.  
+The first test I conducted detected an error on each of the subpages. The label I used to create the "hamburger menu"
+had empty content and this was causing an accessibility error. The problem has been solved and described in the "Bugs"
+section, and new tests have been carried out, which showed no errors with the accessibility on the site.
+
+<details><summary>Home</summary>
+<img src="docs/accessibility/access-home.png" alt="Accessibility of Home-Page">
+</details>
+
+<details><summary>About</summary>
+<img src="docs/accessibility/access-about.png" alt="Accessibility of About-Page">
+</details>
+
+<details><summary>Menu</summary>
+<img src="docs/accessibility/access-menu.png" alt="Accessibility of Menu-Page">
+</details>
+
+<details><summary>Gallery</summary>
+<img src="docs/accessibility/access-gallery.png" alt="Accessibility of Gallery-Page">
+</details>
+
+<details><summary>Contact</summary>
+<img src="docs/accessibility/access-contact.png" alt="Accessibility of Contact-Page">
+</details>
+
+<details><summary>404</summary>
+<img src="docs/accessibility/access-404.png" alt="Accessibility of 404-Page">
+</details>
+
+<details><summary>ThankYou</summary>
+<img src="docs/accessibility/access-thankyou.png" alt="Accessibility of ThankYou-Page">
+</details>
+
+### Performance
+
+To test the performance on the website, I used Google Lighthouse in Google Chrome Developer Tools.
+The test was carried out on all subpages, both for computers and mobile devices.  
+Below is a list of screenshots:
+
+<details><summary>Home</summary>
+<img src="docs/performance/home-desktop.png" alt="Performance of Home-Page">
+</details>
+
+<details><summary>Home - mobiles</summary>
+<img src="docs/performance/home-mobile.png" alt="Performance of Home-Page">
+</details>
+
+<details><summary>About</summary>
+<img src="docs/performance/about-desktop.png" alt="Performance of About-Page">
+</details>
+
+<details><summary>About - mobiles</summary>
+<img src="docs/performance/about-mobile.png" alt="Performance of About-Page">
+</details>
+
+<details><summary>Menu</summary>
+<img src="docs/performance/menu-desktop.png" alt="Performance of Menu-Page">
+</details>
+
+<details><summary>Menu - mobiles</summary>
+<img src="docs/performance/menu-mobile.png" alt="Performance of Menu-Page">
+</details>
+
+<details><summary>Gallery</summary>
+<img src="docs/performance/gallery-desktop.png" alt="Performance of Gallery-Page">
+</details>
+
+<details><summary>Gallery - mobiles</summary>
+<img src="docs/performance/gallery-mobile.png" alt="Performance of Gallery-Page">
+</details>
+
+<details><summary>Contact</summary>
+<img src="docs/performance/contact-desktop.png" alt="Performance of Contact-Page">
+</details>
+
+<details><summary>Contact - mobiles</summary>
+<img src="docs/performance/contact-mobile.png" alt="Performance of Contact-Page">
+</details>
+
+<details><summary>404</summary>
+<img src="docs/performance/404-desktop.png" alt="Performance of 404-Page">
+</details>
+
+<details><summary>404 - mobiles</summary>
+<img src="docs/performance/404-mobile.png" alt="Performance of 404-Page">
+</details>
+
+<details><summary>ThankYou</summary>
+<img src="docs/performance/thankyou-desktop.png" alt="Performance of ThankYou-Page">
+</details>
+
+<details><summary>ThankYou - mobiles</summary>
+<img src="docs/performance/thankyou-mobile.png" alt="Performance of ThankYou-Page">
+</details>
+
+### Performing tests on various devices
+The website was tested on devices such as:
+
+- MSI Katana GF76 17.3"
+- ASUS TUF Dash F15 15.6"
+- iPhone 11 PRO
+- iPhone XR
+- Xiaomi Redmi Note 9
+- Samsung Galaxy Tab A (landscape & portrait mode)
+
+### Browser compatability
+The website has been tested on the following browsers:
+- Google Chrome
+- Chromium
+- Mozilla Firefox
+- Opera
+- Microsoft Edge
+- Safari
+
+[Back to top &uarr;](#ninja-ramen)
+<hr>
+## Deployment
+The website was deployed on GitHub by using following steps:
+1. Login into GitHub and locate the repository - [CI_PP1_Ninja_Ramen](https://github.com/YatechDev/CI_PP1_Ninja_Ramen)
+2. At the top of repository locate the "settings" button and click on it.
+3. Now on the left sidebar find locate the "pages" button and click on it.
+4. Under source heading click on the branch dropdown menu and select: master.
+5. Click save.
+6. You will receive link to your deployed repository like on the screen below.
+
+![GitHub Pages](docs/github-pages.png)
+
+Forking the GitHub repository:
+1. Login into GitHub and locate the repository - [CI_PP1_Ninja_Ramen](https://github.com/YatechDev/CI_PP1_Ninja_Ramen)
+2. At the top of repository in right corner locate the "fork" button and click on it.
+3. Choose where you want to save your forked repository.
+
+## Credits
+1. [CI TEMPLATE](https://github.com/Code-Institute-Org/gitpod-full-template) - This repository was created using the
+   template proposed by Code Institute
+2. [Canva](https://www.canva.com/) - All photos and graphics are from Canva and are used under a license I have. I made
+   most of the graphic elements myself using this program.
+3. [JetBrains](https://www.jetbrains.com/webstorm/) - I use their software - WebStorm - as my main IDE.
+4. [Animated Label - Tutorial](https://www.youtube.com/watch?v=524ycUqs3f0) - This tutorial taught me how to make
+   animated labels for form input. I partially modified the code, although the idea is taken from this tutorial.
+5. [Pretty Sticky](https://codepen.io/BurmesePotato/pen/qBbqpNB) - This code inspired me to create the menu section. It
+   has been modified in large part by me, although the idea and the skeleton come from here.
+6. [Code Institute](https://codeinstitute.net/) - As the main source of my knowledge.
+7. [ZTM](https://zerotomastery.io/), [CodeCademy](https://www.codecademy.com/), [EduWeb](https://eduweb.pl/)
+   , [Strefa Kursow](https://strefakursow.pl/), [W3Schools](https://www.w3schools.com/), [DailyDev](https://daily.dev/) -
+   As additional places where I often do additional courses or read articles and enrich my knowledge.
+
+## Acknowledgements
+Huge thanks to:
+- Mo Shami - For being a great mentor I'm lucky enough to have. For his amazing guidance, support, tips and feedback.
+- To My amazing wife Karolina, who supported me during the whole process of learning and creating the project, allowed
+  me to focus on my work and keep me motivated to act all the time.
+- To my family and friends - for being a great support and for their motivation.
+- The entire Code Institute community on slack for great understanding and motivation every day!
+
+[Back to top &uarr;](#ninja-ramen)
+<hr>

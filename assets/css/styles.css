@@ -22,13 +22,13 @@ section{
     justify-content: space-between;
     align-items: center;
 }
-.landing-page h2{
+.landing-page h1{
     font-size: 3em;
     color: #fff;
     font-weight: 500;
     line-height: 1.5em;
 }
-.landing-page h3{
+.landing-page h2{
     font-size: 1.5em;
     color: #fff;
     font-weight: 500;
@@ -122,9 +122,9 @@ header ul li a:hover::after{
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
-    color: #000;;
+    color: #000;
 }
-.heading h2{
+.heading h1{
     font-size: 30px;
     font-weight: 600;
 }
@@ -136,7 +136,7 @@ header ul li a:hover::after{
 .contentBx{
     padding-right: 30px;
 }
-.contentBx h3{
+.contentBx h2{
     font-size: 24px;
     margin-bottom: 10px;
 }
@@ -169,11 +169,15 @@ img{
     background-size: cover;
     background-position: right;
 }
+.portfolio .heading h1{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
 .portfolio .heading h2{
     color: #fff;
-}
-.portfolio .heading p{
-    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 .portfolio .content{
     display: flex;
@@ -250,6 +254,7 @@ img{
     padding: 20px 0;
     display: flex;
 }
+
 .contactInfoIcon {
     min-width: 40px;
     padding-top: 4px;
