@@ -127,14 +127,14 @@ The website consists of one page and 4 sections in total.
 This is the prototype of the project that will showcase the creators idea and that it was possible to translate a wireframe to webpage.
 There will a wireframe for each section of the page, it may not show the entire picture since the creator did not think of a resume button and or using icons to showcase skills until after development was started.
 
-Home
-![Wireframes-Landing](https://user-images.githubusercontent.com/1257288/188208075-98042511-a94f-4521-899e-025c2c9e3d1b.png)
-About
-![Wireframes-About](https://user-images.githubusercontent.com/1257288/188208096-5c44135d-7117-48f5-afa5-87bd7891a0d1.png)
-Portfolio
-![Wireframes-Portfolio](https://user-images.githubusercontent.com/1257288/188208126-dd64ab58-c2bd-4d28-9a3d-cd3317a57204.png)
-Contact
-![Wireframes-Contact](https://user-images.githubusercontent.com/1257288/188208148-a8cc0fd2-d684-4fdd-bb55-9d45d02e7686.png)
+1. Home
+- ![Wireframes-Landing](https://user-images.githubusercontent.com/1257288/188208075-98042511-a94f-4521-899e-025c2c9e3d1b.png)
+2. About
+- ![Wireframes-About](https://user-images.githubusercontent.com/1257288/188208096-5c44135d-7117-48f5-afa5-87bd7891a0d1.png)
+3. Portfolio
+- ![Wireframes-Portfolio](https://user-images.githubusercontent.com/1257288/188208126-dd64ab58-c2bd-4d28-9a3d-cd3317a57204.png)
+4. Contact
+- ![Wireframes-Contact](https://user-images.githubusercontent.com/1257288/188208148-a8cc0fd2-d684-4fdd-bb55-9d45d02e7686.png)
 
 [Back to top &uarr;](#jambrisak.com)
 <hr>
@@ -213,12 +213,12 @@ At the bottom of the page the user will see the footer, and it contains just a c
 
 I used "W3C Markup Validation Service" to validate the code.  
 I validated each of the subpages and no error was found on any of them.
-![HTML-Validator](https://user-images.githubusercontent.com/1257288/188002171-2b28c187-4ba3-4107-9076-c27741fef620.png)
+- ![HTML-Validator](https://user-images.githubusercontent.com/1257288/188002171-2b28c187-4ba3-4107-9076-c27741fef620.png)
 
 ### CSS Validation
 
 I used "W3C CSS Validation Service" to validate the CSS code.
-![Jigsaw](https://user-images.githubusercontent.com/1257288/188002280-96776a93-6d6c-4739-952e-c29d81943f91.png)
+- ![Jigsaw](https://user-images.githubusercontent.com/1257288/188002280-96776a93-6d6c-4739-952e-c29d81943f91.png)
 
 ## Testing
 
