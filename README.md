@@ -127,21 +127,14 @@ The website consists of one page and 4 sections in total.
 This is the prototype of the project that will showcase the creators idea and that it was possible to translate a wireframe to webpage.
 There will a wireframe for each section of the page, it may not show the entire picture since the creator did not think of a resume button and or using icons to showcase skills until after development was started.
 
-<details><summary>Home</summary>
-
-</details>
-<details><summary>About</summary>
-
-</details>
-<details><summary>Portfolio</summary>
-
-</details>
-<details><summary>Contact</summary>
-
-</details>
-<details><summary>Footer</summary>
-
-</details>
+Home
+![Wireframes-Landing](https://user-images.githubusercontent.com/1257288/188208075-98042511-a94f-4521-899e-025c2c9e3d1b.png)
+About
+![Wireframes-About](https://user-images.githubusercontent.com/1257288/188208096-5c44135d-7117-48f5-afa5-87bd7891a0d1.png)
+Portfolio
+![Wireframes-Portfolio](https://user-images.githubusercontent.com/1257288/188208126-dd64ab58-c2bd-4d28-9a3d-cd3317a57204.png)
+Contact
+![Wireframes-Contact](https://user-images.githubusercontent.com/1257288/188208148-a8cc0fd2-d684-4fdd-bb55-9d45d02e7686.png)
 
 [Back to top &uarr;](#jambrisak.com)
 <hr>
