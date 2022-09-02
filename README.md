@@ -110,7 +110,7 @@ Below is a list of the photos used.
 'Poppins' regular 400 - taken from Google Fonts and apply via @import method to CSS file. 
 I Chose this font because after a quick search on google on most used font for portfolio webpages, 'Poppins' regular 400 was the most popular choice, but its also because of its simplicity and ease of reading.
 
-![Font](https://user-images.githubusercontent.com/1257288/188181401-7caaaed0-a867-413e-aceb-368d35985d55.png)
+![Font](https://user-images.githubusercontent.com/1257288/188204836-a4a83c53-73c7-4be5-ae56-adf3e4c62c80.png)
 
 ### Structure
 
