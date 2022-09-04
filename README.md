@@ -222,14 +222,6 @@ I used "W3C CSS Validation Service" to validate the CSS code.
 
 ## Testing
 
-### Accessibility
-I used "The WAVE WebAIM web accessibility evaluation tool" to test the code for accessibility.  
-The first test I conducted detected some errors relating to contrast errors about the chosen color for Logo, navbar but also on chosen color for the portfolio sections h1 and h2 tag.
-The color that they wanted me to switch to would have changed the design for the page so I decided to ignore the contrast errors, I only did so because I had shown the website to 3 of my students,
-and these 3 students all have dyslexia and one is color blind, and none of them had any trouble seeing the text on any device. The test also showed three errors that my form did not have any label. Which,
-was also a design choice due to me already in the input and textarea had written the label. And here also I had checked with my students and not a single one had trouble seeing it.
-![Wave](https://user-images.githubusercontent.com/1257288/188197192-1b56cdc7-3c7d-44f6-a7a0-7328197b7cd6.png)
-
 ### Performance
 
 To test the performance on the website, I used Google Lighthouse in Google Chrome Developer Tools.
@@ -242,8 +234,6 @@ Below is a list of screenshots:
 
 - Mobile - 
 ![Lighthouse-Mobile](https://user-images.githubusercontent.com/1257288/188001246-8fc7b5a4-5655-4247-8b6d-3ee07f63dc89.png)
-
-
 
 ### Performing tests on various devices
 The website was tested on devices such as:
