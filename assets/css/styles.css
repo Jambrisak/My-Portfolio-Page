@@ -137,6 +137,7 @@ header ul li a:hover::after{
     padding-right: 30px;
 }
 .contentBx h2{
+    margin-top: 10px;
     font-size: 24px;
     margin-bottom: 10px;
 }
