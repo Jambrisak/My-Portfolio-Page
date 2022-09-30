@@ -1,21 +1,16 @@
-/*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-/*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
   --nav-width: 324px;
-  /*===== Font weight =====*/
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
-  /*===== Colores =====*/
   --first-color: #CC4B2C;
   --first-color-dark: #662616;
   --first-color-darken: #290F09;
   --text-color: #54423D;
   --first-color-light: #EAE7E6;
   --first-color-lighten: #FFFAFA;
-  /*===== Font and typography =====*/
   --body-font: 'Poppins', sans-serif;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -23,13 +18,11 @@
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
-  /*===== Margenes =====*/
   --mb-1: .5rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
-  /*===== z index =====*/
   --z-fixed: 100;
 }
 
@@ -44,7 +37,6 @@
   }
 }
 
-/*===== BASE =====*/
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -84,7 +76,6 @@ img {
   display: block;
 }
 
-/*===== CLASS CSS ===== */
 .section {
   padding: 4rem 0 2rem;
 }
@@ -105,7 +96,6 @@ img {
   margin-bottom: .25rem;
 }
 
-/*===== LAYOUT =====*/
 .bd-grid {
   max-width: 1024px;
   display: grid;
@@ -126,7 +116,6 @@ img {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/*===== NAV =====*/
 .nav {
   height: var(--header-height);
   display: flex;
@@ -178,17 +167,14 @@ img {
   cursor: pointer;
 }
 
-/*=== Show menu ===*/
 .show {
   left: 0;
 }
 
-/*Active menu*/
 .active {
   color: var(--text-color);
 }
 
-/*===== HOME =====*/
 .home__container {
   height: calc(100vh - var(--header-height));
   align-items: center;
@@ -253,7 +239,6 @@ img {
   width: 90%;
 }
 
-/*BUTTONS*/
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -277,7 +262,6 @@ img {
   color: var(--first-color-lighten);
 }
 
-/* ===== ABOUT =====*/
 .about__container {
   row-gap: 2rem;
 }
@@ -329,7 +313,6 @@ img {
   font-size: var(--small-font-size);
 }
 
-/* ===== SKILLS =====*/
 .skills__container {
   row-gap: 2rem;
 }
@@ -392,7 +375,6 @@ img {
   width: 60%;
 }
 
-/* ===== EDUCATION =====*/
 .education__container {
   row-gap: 2rem;
 }
@@ -449,7 +431,6 @@ img {
   transform: translate(5px, -4px);
 }
 
-/* ===== SERVICES =====*/
 .services__container {
   row-gap: 2rem;
 }
@@ -498,7 +479,6 @@ img {
   transition: .5s;
 }
 
-/* ===== PROJECT IN MIND  =====*/
 .project {
   background-color: var(--first-color);
   padding-bottom: 0;
@@ -525,7 +505,6 @@ img {
   justify-self: center;
 }
 
-/* ===== WORKS =====*/
 .works__container {
   justify-items: center;
   row-gap: 2rem;
@@ -570,7 +549,6 @@ img {
   color: var(--first-color-lighten);
 }
 
-/* ===== CONTACT =====*/
 .contact__container {
   row-gap: 3rem;
 }
@@ -616,7 +594,6 @@ img {
   padding-left: 1rem;
 }
 
-/* ===== FOOTER =====*/
 .footer {
   background-color: var(--first-color-darken);
   color: var(--first-color-lighten);
@@ -657,7 +634,6 @@ img {
   color: var(--text-color);
 }
 
-/* Scroll top */
 .scrolltop {
   position: fixed;
   right: 1rem;
@@ -681,12 +657,10 @@ img {
   color: var(--first-color-light);
 }
 
-/* Show scroll */
 .show-scroll {
   bottom: 2rem;
 }
 
-/* ===== MEDIA QUERIES =====*/
 @media screen and (min-width: 768px) {
   .nav__menu {
     width: var(--nav-width);
@@ -789,7 +763,6 @@ img {
   }
 }
 
-/* For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
   .home__container {
     height: 640px;
