@@ -1,175 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="text/html; IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,minimum-scale=0.8,maximum-scale=1,user-scalable=no">
-    <meta property="og:site_name" content="Jambrisak">
-    <meta property="og:url" content="https://jambrisak.com">
-    <meta property="og:type" content="article">
-    <meta name="description" content="Philip Jambrisak personal portfolio website, here you will learn more about the author of this portfolio. You will also see some of his work, and you can find his contact information">
-    <title>Jambrisak</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-</head>
-<body>
-    <!--Navbar-->
-    <header>
-        <a href="#home" class="logo">Jambrisak</a>
-        <div class="toggle" onclick="toggleMenu();"></div>
-            <ul class="menu">
-                <li><a href="#home" onclick="toggleMenu();">Home</a></li>
-                <li><a href="#about" onclick="toggleMenu();">About</a></li>
-                <li><a href="#portfolio" onclick="toggleMenu();">Portfolio</a></li>
-                <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-            </ul>
-    </header>
-    <!--Front page image and text-->
-    <section class="landing-page" id="home">
-            <div class="textBx">
-                <h1>Hello, I'm Philip Jambrisak.</h1>
-                <h2>I'm a Full Stack / Front End Developer.</h2>
-                <a href="./assets/text/Philip-Jambrisak-CV.pdf" download class="landing-btn">Resume</a>
-            </div>
-    </section> 
-    <!--About section-->
-    <section class="about" id="about">
-        <div class="heading">
-            <h1>About Me</h1>
-        </div>
-        <div class="content">
-            <div class="contentBx w50">
-                <h2>I'm a Full Stack / Front End Developer.</h2>
-                <p>I am a newly Code Institute graduated Full Stack Developer who has developed projects using <em>HTML/CSS</em>, <em>JavaScript</em>, <em>Python</em>. 
-                I specialize in building applications specific to the e-commerce needs of my clients. 
-                I plan on doing work in <em>software development</em>, <em>mobile app creation</em>, <em>front/back-end web</em>, <em>database/server management</em>.</p>
-                <p>But would also love to get into game development, because i spend my early teens playing a'lot of games.
-                Some key things to know about me. I'm a workaholic, I'm a perfectionist, I’m a team player, and I'm self-critical, 
-                I’m always interested in learning. The reason that I’m interested in working with Full Stack, Front/Back-End because it’s a <span>passion.</span>
-                </p>
-                <h2>Education - 2022</h2>
-                <p>Full Stack Software Development - <a href="https://codeinstitute.net/se/full-stack-software-development-diploma/">Code Institute</a></p>
-                <p>Front End Development - <a href="https://www.coursera.org/professional-certificates/meta-front-end-developer">Meta</a></p>
-                <h2>Skills</h2>
-                <i class="fa-brands fa-square-js fa-3x"></i>
-                <i class="fa-brands fa-python fa-3x"></i>
-                <i class="fa-brands fa-html5 fa-3x"></i>
-                <i class="fa-brands fa-css3-alt fa-3x"></i>
-                <i class="fa-brands fa-bootstrap fa-3x"></i>
-                <i class="fa-brands fa-angular fa-3x"></i>
-                <i class="fa-brands fa-react fa-3x"></i>
-                <i class="fa-brands fa-git fa-3x"></i>
-                <i class="fa-brands fa-aws fa-3x"></i>
-                <i class="fa-brands fa-node-js fa-3x"></i>
-            </div>
-            <div class="w50">
-                <img src="./assets/images/Philip.webp" height="512" width="502" alt="picture of me" class="img" rel="apple-touch-icon">
-            </div>
-        </div>
-    </section>
-    <!--Portfolio section-->
-    <section class="portfolio" id="portfolio">
-        <div class="heading">
-            <h1>My Portfolio</h1>
-            <h2>Watch for upcoming updates on my future projects.</h2>
-        </div>
-        <div class="content">
-            <div class="portfolioBx">
-                <img src="./assets/images/coming-soon.webp" width="936" height="600" class="imageBx" alt="Photo by Samuel Regan-Asante - unsplash.com">
-            </div>
-            <div class="portfolioBx">
-                <img src="./assets/images/coming-soon.webp" width="936" height="600" class="imageBx" alt="Photo by Samuel Regan-Asante - unsplash.com">
-            </div>
-            <div class="portfolioBx">
-                <img src="./assets/images/coming-soon.webp" width="936" height="600" class="imageBx" alt="Photo by Samuel Regan-Asante - unsplash.com">
-            </div>
-            <div class="portfolioBx">
-                <img src="./assets/images/coming-soon.webp" width="936" height="600" class="imageBx" alt="Photo by Samuel Regan-Asante - unsplash.com">
-            </div>
-        </div>
-    </section>
-    <!--Contact section-->
-    <section class="contact" id="contact">
-        <div class="heading">
-            <h1>Contact Me</h1>
-            <h2>Here you will find my contact info, or you can send me a message.</h2>
-        </div>
-        <div class="content">
-    <!--Contact info section-->
-            <div class="contactInfo">
-                <h3>Contact Info</h3>
-                <div class="contactInfoBx">
-                    <div class="box">
-                        <div class="contactInfoIcon">
-                            <i class="fa-solid fa-envelope">
-                            </i>
-                            <span class="text">
-                                <a href="mailto:philip@jambrisak.com">philip@jambrisak.com</a>
-                            </span>
-                        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Responsive personal portfolio | Philip</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu ' ></i>
+                </div>
+
+                <div>
+                    <a href="#" class="nav__logo">Philip</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
                     </div>
-                    <div class="box">
-                        <div class="contactInfoIcon">
-                            <i class="fa-solid fa-square-phone">
-                            </i>
-                            <span class="text">
-                                <a href="tel:+46738994900">+46 (0) 738994900</a>
-                            </span>
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contactme</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <div class="home__data">
+                        <div class="home__img">
+                            <!-- When you change your image it must be of equal measurements (Ejm: 250 x 250), so that it can be centered -->
+                            <img src="assets/img/Philip-re.png" alt="">
                         </div>
-                    </div>
-                    <div class="box">
-                        <div class="contactInfoIcon">
-                            <a href="https://www.linkedin.com/in/philip-jambrisak/" target="_blank">
-                                <i class="fa-brands fa-linkedin">
-                                </i>
-                                <span class="text">
-                                    //Philip Jambrisak
-                                </span>    
-                            </a>
+
+                        <h1 class="home__title">Philip Jambrisak</h1>
+                        <span class="home__profession">Full Stack Developer</span>
+
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/philip-jambrisak/" target="_blank" class="home__social-link"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://github.com/Jambrisak" target="_blank" class="home__social-link"><i class='bx bxl-github'></i></a>
                         </div>
+                        
+                        <a download="" href="assets/pdf/Philip-Cv.pdf" class="button home__button">Download Resume</a>
                     </div>
-                    <div class="box">
-                        <div class="contactInfoIcon">
-                            <a href="https://github.com/Jambrisak" target="_blank">
-                                <i class="fa-brands fa-square-github">  
-                                </i>
-                                <span class="text">
-                                    //Jambrisak
-                                </span>
-                            </a>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <span class="section-subtitle">My Intro</span>
+                <h2 class="section-title">About Me</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__data">
+                        <p class="about__text">Hi, I'm a full stack developer, passionate about creating and developing web interfaces. I have some years of experience in this area of work, with multiple quality projects. <br><br>"Workaholic, perfectionist, has a systematic mindset,
+                            self-critical, team worker, knowledge seeker"
+                            <br><br>Before I become a full stack developer I worked as a Social Science High School teacher in Malmö. It taught me to interact with people and be a great information gatherer on people, and it taught me patience and,
+                            being able to cope with stress.</p>
+                        
+                    </div>
+
+                    <div>
+                        <div class="about__information">
+                            <h3 class="about__information-title">Information</h3>
+    
+                            <div class="about__information-data">
+                                <i class='bx bx-user about__information-icon'></i>
+                                <span>Philip Jambrisak</span>
+                            </div>
+    
+                            <div class="about__information-data">
+                                <i class='bx bx-phone about__information-icon' ></i>
+                                <span>+46 738994900</span>
+                            </div>
+    
+                            <div class="about__information-data">
+                                <i class='bx bx-envelope about__information-icon' ></i>
+                                <span>philip@jambrisak.com</span>
+                            </div>
+                        </div>
+    
+                        <div class="about__information">
+                            <h3 class="about__information-title">Experience and support</h3>
+    
+                            <div class="about__information-data">
+                                <i class='bx bx-medal about__information-icon' ></i>
+                                <div>
+                                    <span class="about__information-subtitle">1 Years Job</span>
+                                    <span class="about__information-subtitle-small">Experience</span>
+                                </div>
+                            </div>
+    
+                            <div class="about__information-data">
+                                <i class='bx bx-briefcase-alt about__information-icon' ></i>
+                                <div>
+                                    <span class="about__information-subtitle">5+ Projects</span>
+                                    <span class="about__information-subtitle-small">Completed</span>
+                                </div>
+                            </div>
+    
+                            <div class="about__information-data">
+                                <i class='bx bx-support about__information-icon' ></i>
+                                <div>
+                                    <span class="about__information-subtitle">Support</span>
+                                    <span class="about__information-subtitle-small">Online 24/7</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <span class="section-subtitle">Why Choose Me</span>
+                <h2 class="section-title">My Expertise Area</h2>
+
+                <div class="skills__container bd-grid">
+                    <div class="skills__content">
+                        <h3 class="skills__subtitle">Frontend</h3>
+
+                        <div class="skills__data">
+                            <span class="skills__name">Html/css</span>
+                            <span class="skills__number">80%</span>
+                            <span class="skills__bar skills__html"></span>
+                        </div>
+
+                        <div class="skills__data">
+                            <span class="skills__name">Javascript</span>
+                            <span class="skills__number">90%</span>
+                            <span class="skills__bar skills__js"></span>
+                        </div>
+
+                        <div class="skills__data">
+                            <span class="skills__name">React</span>
+                            <span class="skills__number">70%</span>
+                            <span class="skills__bar skills__react"></span>
+                        </div>
+
+                        <div class="skills__data">
+                            <span class="skills__name">Angular</span>
+                            <span class="skills__number">60%</span>
+                            <span class="skills__bar skills__angular"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__content">
+                        <h3 class="skills__subtitle">Backend</h3>
+
+                        <div class="skills__data">
+                            <span class="skills__name">Php</span>
+                            <span class="skills__number">80%</span>
+                            <span class="skills__bar skills__php"></span>
+                        </div>
+
+                        <div class="skills__data">
+                            <span class="skills__name">Node js</span>
+                            <span class="skills__number">70%</span>
+                            <span class="skills__bar skills__node"></span>
+                        </div>
+
+                        <div class="skills__data">
+                            <span class="skills__name">Firebase</span>
+                            <span class="skills__number">90%</span>
+                            <span class="skills__bar skills__firebase"></span>
+                        </div>
+
+                        <div class="skills__data">
+                            <span class="skills__name">Python</span>
+                            <span class="skills__number">60%</span>
+                            <span class="skills__bar skills__python"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== EDUCATION =====-->
+            <section class="education section">
+                <span class="section-subtitle">Qualification</span>
+                <h2 class="section-title">My Education</h2>
+
+                <div class="education__container bd-grid">
+                    <div class="education__content">
+                        <div>
+                            <h3 class="education__year">2022 - 2023</h3>
+                            <span class="education__university">Code Institute</span>
+                        </div>
+
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="education__race">Full Stack Software Development </h3>
+                            <span class="education__specialty">E-Commerce</span> 
+                        </div>
+                    </div>
+
+                    <div class="education__content">
+                        <div>
+                            <h3 class="education__year">2014 - 2019</h3>
+                            <span class="education__university">Malmö University</span>
+                        </div>
+
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="education__race">Teaching Degree</h3>
+                            <span class="education__specialty">High School Social Science Teacher</span> 
+                        </div>
+                    </div>
+
+                    <div class="education__content">
+                        <div>
+                            <h3 class="education__year">2022 - 2023</h3>
+                            <span class="education__university">Coursera by META</span>
+                        </div>
+
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="education__race">Front End Developer Professional Certificate</h3>
+                            <span class="education__specialty">Front End</span> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SERVICES =====-->
+            <section class="services section" id="services">
+                <span class="section-subtitle">What I Offer</span>
+                <h2 class="section-title">My Services</h2>
+
+                <div class="services__container bd-grid">
+                    <div class="services__content">
+                        <i class='bx bx-code services__icon'></i>
+                        <h3 class="services__title">Web Design</h3>
+                        <p class="services__description">This service that I offer is of high quality, and above all experience that I have in the labor field for some years.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <i class='bx bx-pen services__icon'></i>
+                        <h3 class="services__title">UI/UX</h3>
+                        <p class="services__description">This service that I offer is of high quality, and above all experience that I have in the labor field for some years.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <i class='bx bx-brush services__icon'></i>
+                        <h3 class="services__title">Web Design</h3>
+                        <p class="services__description">This service that I offer is of high quality, and above all experience that I have in the labor field for some years.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <i class='bx bx-server services__icon'></i>
+                        <h3 class="services__title">Backend development</h3>
+                        <p class="services__description">This service that I offer is of high quality, and above all experience that I have in the labor field for some years. </p>
+                    </div>
+
+                    <div class="services__content">
+                        <i class='bx bx-pencil services__icon'></i>
+                        <h3 class="services__title">Content Writing</h3>
+                        <p class="services__description">This service that I offer is of high quality, and above all experience that I have in the labor field for some years.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <i class='bx bx-mobile-alt services__icon'></i>
+                        <h3 class="services__title">Interface Movil</h3>
+                        <p class="services__description">This service that I offer is of high quality, and above all experience that I have in the labor field for some years.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PROJECT IN MIND =====-->
+            <section class="project section">
+                <div class="project__container bd-grid">
+                    <div class="project__data">
+                        <h2 class="section-title project__title">Do you have a project in mind</h2>
+                        <p class="project__description">If you have a project that you want to carry out, do not hesitate and tell me what it is, and what services I can offer you, contact me directly here.</p>
+                        <a href="#contact" class="button button__light">Contact Me</a>
+                    </div>
+
+                    
+                </div>
+            </section>
+
+            <!--===== WORKS =====-->
+            <section class="works section" id="works">
+                <span class="section-subtitle">My Portfolio</span>
+                <h2 class="section-title">Recent Works</h2>
+
+                <div class="works__container bd-grid">
+                    <div class="works__img">
+                        <img src="assets/img/work1.jpg" alt="">
+
+                        <div class="works__data">
+                            <!-- Insert your job link into href = "" -->
+                            <a href="#" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                            <span class="works__title">Work 1</span>
+                        </div>
+                    </div>
+                    <div class="works__img">
+                        <img src="assets/img/work2.jpg" alt="">
+
+                        <div class="works__data">
+                            <a href="#" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                            <span class="works__title">Work 2</span>
+                        </div>
+                    </div>
+                    <div class="works__img">
+                        <img src="assets/img/work3.jpg" alt="">
+
+                        <div class="works__data">
+                            <a href="#" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                            <span class="works__title">Work 3</span>
+                        </div>
+                    </div>
+                    <div class="works__img">
+                        <img src="assets/img/work4.jpg" alt="">
+
+                        <div class="works__data">
+                            <a href="#" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                            <span class="works__title">Work 4</span>
+                        </div>
+                    </div>
+                    <div class="works__img">
+                        <img src="assets/img/work5.jpg" alt="">
+
+                        <div class="works__data">
+                            <a href="#" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                            <span class="works__title">Work 5</span>
+                        </div>
+                    </div>
+                    <div class="works__img">
+                        <img src="assets/img/work6.jpg" alt="">
+
+                        <div class="works__data">
+                            <a href="#" target="_blank" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                            <span class="works__title">Work 6</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <span class="section-subtitle">Contact Me</span>
+                <h2 class="section-title">Get In Touch</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="https://formsubmit.co/philip@jambrisak.com" method="POST" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input" required="true">
+                            <input type="mail" placeholder="Email" class="contact__input" required="true">
+                        </div>
+
+                        <input type="text" placeholder="Project" class="contact__input" required="true">
+
+                        <textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input" required="true"></textarea>
+
+                        <input type="submit" value="Send Message" class="button contact__button">
+                    </form>
+
+                    <div class="contact__info">
+                        <div class="contact__info">
+                            <h3 class="contact__subtitle">Call me</h3>
+                            <span class="contact__text">+46 738994900</span>
+                        </div>
+
+                        <div class="contact__info">
+                            <h3 class="contact__subtitle">E-mail</h3>
+                            <span class="contact__text">philip@jambrisak.com</span>
+                        </div>
+
+                        <div class="contact__info">
+                            <h3 class="contact__subtitle">Location</h3>
+                            <span class="contact__text">Limhamnsvägen 137</span>
+                            <span class="contact__text">Malmö - Sweden</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <h1 class="footer__title">Philip</h1>
+                <p class="footer__description">I am Philip and this is my personal website, consult me here.</p>
+
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/MajorJammbaa/" target="_blank" class="footer__link"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://www.instagram.com/jambrisak/" target="_blank" class="footer__link"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://twitter.com/PhilipJambrisak" target="_blank" class="footer__link"><i class='bx bxl-twitter' ></i></a>
+                </div>
+                <p class="footer__copy">All right reserved by Philip Jambrisak - 2022</p>
             </div>
-    <!--Contact form section-->
-            <div class="formBx">
-                <form action="https://formsubmit.co/eeda1aba5d324bc3ff93692df24c69c6" method="POST">
-                    <h3>Message Me</h3>
-                    <input type="text" name ="fname" placeholder="Full Name" required>
-                    <input type="email" name ="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send" class="send-btn">
-                </form>
-            </div>
-        </div>
-    </section>
-    <!--Footer section-->
-    <div class="footer">
-        <p>copyright &copy;Philip Jambrisak, 2022. All Right Reserved</p>
-    </div>
-<!--javascript taken from udemy : Course-->
-<script>
-    window.addEventListener('scroll', function(){
-        var header = document.querySelector('header');
-        header.classList.toggle('sticky', window.scrollY > 0);
-    });
-    //Hamburger menu
-    function toggleMenu(){
-        var menuToggle = document.querySelector('.toggle');
-        var menu = document.querySelector('.menu');
-        menuToggle.classList.toggle('active');
-        menu.classList.toggle('active');
-    };
-</script>
-<script src="https://kit.fontawesome.com/adea6e81d4.js" crossorigin="anonymous"></script>
-</body>
+        </footer>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
