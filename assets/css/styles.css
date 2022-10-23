@@ -149,6 +149,10 @@ header ul li a:hover::after{
     color: black;
     text-decoration: none;
 }
+.contentBx a:hover{
+    color: #b30037;
+    font-weight: bold;
+}
 .contentBx i {
     margin-right: 15px;
     transition: 0.5s smooth;
