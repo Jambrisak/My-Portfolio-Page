@@ -2,167 +2,455 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="text/html; IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,minimum-scale=0.8,maximum-scale=1,user-scalable=no">
-    <meta property="og:site_name" content="Jambrisak">
-    <meta property="og:url" content="https://jambrisak.com">
-    <meta property="og:type" content="article">
-    <meta name="description" content="Philip Jambrisak personal portfolio website, here you will learn more about the author of this portfolio. You will also see some of his work, and you can find his contact information">
-    <title>Jambrisak</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link type="image/x-icon" sizes="16x16" rel="icon" href="./assets/images/favicon/icons8-working-with-a-laptop-windows-11-color-16.png">
+    <link type="image/x-icon" sizes="32x32" rel="icon" href="./assets/images/favicon/icons8-working-with-a-laptop-windows-11-color-32.png">
+    <link type="image/x-icon" sizes="96x96" rel="icon" href="./assets/images/favicon/icons8-working-with-a-laptop-windows-11-color-96.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== LINE ICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Responsive portfolio website - Philip Jambrisak</title>
 </head>
 <body>
-    <!--Navbar-->
-    <header>
-        <a href="#home" class="logo">Jambrisak</a>
-        <div class="toggle" onclick="toggleMenu();"></div>
-            <ul class="menu">
-                <li><a href="#home" onclick="toggleMenu();">Home</a></li>
-                <li><a href="#about" onclick="toggleMenu();">About</a></li>
-                <li><a href="#portfolio" onclick="toggleMenu();">Portfolio</a></li>
-                <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-            </ul>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <!-- nav -->
+        <nav class="nav container padd-15">
+            <!-- nav logo -->
+            <a href="#" class="nav-logo">
+                <h2>Philip</h2>
+            </a>
+            <!-- nav menu -->
+            <div class="nav-menu" id="nav-menu">
+                <!-- nav list -->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <!-- nav close -->
+                <div class="nav-close" id="nav-close">
+                    <i class="lni lni-close"></i>
+                </div>
+            </div>
+            <!-- nav btn -->
+            <div class="nav-btns">
+                <!-- theme change btn -->
+                <i class="lni lni-pallet change-theme" id="theme-button"></i>
+                <!-- toggle btn -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="lni lni-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
     </header>
-    <!--Front page image and text-->
-    <section class="landing-page" id="home">
-            <div class="textBx">
-                <h1>Hello, I'm Philip Jambrisak.</h1>
-                <h2>I'm a Full Stack / Front End Developer.</h2>
-                <a href="./assets/text/Resume-Philip-Jambrisak.pdf" download class="landing-btn">Resume</a>
+
+    <!--=============== MAIN ===============-->
+    <main class="main-content">
+        <!--=============== HOME ===============-->
+        <section class="home" id="home">
+            <div class="container">
+                <!-- intro -->
+                <div class="intro">
+                    <!-- avatar image -->
+                    <img src="./assets/images/Philip.png" width="150" height="150" alt="Bolby">
+                    <!-- info -->
+                    <h1>Philip Jambrisak</h1>
+                    <span>I'm a <span class="info-text">Full-Stack Developer</span></span>
+                    <!-- social icons -->
+                    <ul class="social-icons">
+                        <li><a href="https://www.linkedin.com/in/philip-jambrisak/"><i class="lni lni-linkedin-original"></i></a></li>
+                        <li><a href="https://github.com/Jambrisak"><i class="lni lni-github-original"></i></a></li>
+                    </ul>
+                    <!-- button -->
+                    <div>
+                        <a href="#contact" class="btn btn-default">Hire me</a>
+                    </div>
+                    <!-- scroll down mouse wheel -->
+                    <div class="scroll-down">
+                        <a href="#" class="mouse-wrapper">
+                            <span>Scroll Down</span>
+                            <span class="mouse">
+                                <span class="wheel"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
             </div>
-    </section> 
-    <!--About section-->
-    <section class="about" id="about">
-        <div class="heading">
-            <h1>About Me</h1>
-        </div>
-        <div class="content">
-            <div class="contentBx w50">
-                <h2>I'm a Full Stack / Front End Developer.</h2>
-                <p>I am a newly graduated Full Stack Developer who has developed projects using <em>HTML/CSS</em>, <em>JavaScript</em>, <em>Python</em>. 
-                I specialize in building applications specific to the e-commerce needs of my clients. 
-                I plan on doing work in <em>software development</em>, <em>mobile app creation</em>, <em>front/back-end web</em>, <em>database/server management</em>.</p>
-                <p>But would also love to get into game development, because I spent my early teens playing computer games.                Some key things to know about me. I'm a workaholic, I'm a perfectionist, I’m a team player, and I'm self-critical, 
-                I’m always interested in learning. The reason that I’m interested in working with Full Stack, Front/Back-End is because it's a <span>passion.</span>
-                </p>
-                <h2>Education</h2>
-                <p>Full Stack Software Development - <a href="https://codeinstitute.net/se/full-stack-software-development-diploma/" target="_blank">Code Institute</a></p>
-                <p>Front End Development - <a href="https://www.coursera.org/professional-certificates/meta-front-end-developer" target="_blank">Meta</a></p>
-                <h2>Work Experience</h2>
-                <p>Junior Software Developer - <a href="https://www.mdriven.net/" target="_blank">MDriven</a></p>
-                <h2>Skills</h2>
-                <i class="fa-brands fa-square-js fa-3x"></i>
-                <i class="fa-brands fa-python fa-3x"></i>
-                <i class="fa-brands fa-html5 fa-3x"></i>
-                <i class="fa-brands fa-css3-alt fa-3x"></i>
-                <i class="fa-brands fa-bootstrap fa-3x"></i>
-                <i class="fa-brands fa-angular fa-3x"></i>
-                <i class="fa-brands fa-react fa-3x"></i>
-                <i class="fa-brands fa-git fa-3x"></i>
-                <i class="fa-brands fa-aws fa-3x"></i>
-                <i class="fa-brands fa-node-js fa-3x"></i>
-            </div>
-            <div class="w50">
-                <img src="./assets/images/Philip.webp" height="512" width="502" alt="picture of me" class="img" rel="apple-touch-icon">
-            </div>
-        </div>
-    </section>
-    <!--Portfolio section-->
-    <section class="portfolio" id="portfolio">
-        <div class="heading">
-            <h1>My Portfolio</h1>
-        </div>
-        <div class="content">
-            <div class="portfolioBx">
-                <a href="https://jambrisak.github.io/My-JavaScript-Project/"><img src="https://img.icons8.com/clouds/350/000000/greek-helmet.png" class="imageBx"/></a>
-            </div>
-            <div class="portfolioBx">
-                <a href="#"><img src="https://img.icons8.com/officel/300/000000/battleship.png" class="imageBx"/></a>
-            </div>
-            <div class="portfolioBx">
-                <a href="#"><img src="https://img.icons8.com/color/300/000000/restaurant-menu.png" class="imageBx"/></a>
-            </div>
-            <div class="portfolioBx">
-                <img src="./assets/images/coming-soon.webp" width="936" height="600" class="imageBx" alt="Photo by Samuel Regan-Asante - unsplash.com">
-            </div>
-        </div>
-    </section>
-    <!--Contact section-->
-    <section class="contact" id="contact">
-        <div class="heading">
-            <h1>Contact Me</h1>
-            <h2>Here you will find my contact info, or you can send me a message.</h2>
-        </div>
-        <div class="content">
-    <!--Contact info section-->
-            <div class="contactInfo">
-                <h3>Contact Info</h3>
-                <div class="contactInfoBx">
-                    <div class="box">
-                        <div class="contactInfoIcon">
-                            <a href="mailto:philip@jambrisak.com" target="_blank">
-                                <i class="fa-solid fa-envelope">
-                                </i>
-                                <span class="text">
-                                //philip@jambrisak.com</a>
-                                </span>
-                            </a>
+        </section>
+        <!--=============== About ===============-->
+        <section class="about section" id="about">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">About Me</h2>
+                <div class="row">
+                    <div class="about-img padd-15">
+                        <!-- avatar img -->
+                        <img src="./assets/images/Philip.png" alt="">
+                    </div>
+                    <div class="about-content padd-15">
+                        <div class="rounded">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <!-- about text -->
+                                    <p>I am Philip Jambrisak, full-stack developer from Malmö, Sweden. I'm a newly graduated full-stack developer, working as a Junor Software Developer at MDriven AB.</p>
+                                    <div>
+                                        <a href="./assets/docs/Resume-Philip-Jambrisak.pdf" class="btn btn-default">Download CV</a>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <!-- skill item -->
+                                        <div class="skill-item">
+                                            <h4>Development</h4>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 95%; background: rgb(255,209,92);"></div>
+                                                <div class="skill-percent">95%</div>
+                                            </div>
+                                        </div>
+                                        <!-- skill item -->
+                                        <div class="skill-item">
+                                            <h4>UI/UX design</h4>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 85%; background: rgb(108,108,229);"></div>
+                                                <div class="skill-percent">85%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <h4>Back End/Front End</h4>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 75%; background: rgb(229, 108, 108);"></div>
+                                                <div class="skill-percent">75%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="contactInfoIcon">
-                            <a href="https://www.linkedin.com/in/philip-jambrisak/" target="_blank">
-                                <i class="fa-brands fa-linkedin">
-                                </i>
-                                <span class="text">
-                                    //Philip Jambrisak
-                                </span>    
-                            </a>
+                </div>
+                <div class="row">
+                    <!-- fact item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-thumbs-up"></i>
+                        <div class="details">
+                            <h3>5+</h3>
+                            <p>Project's done</p>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="contactInfoIcon">
-                            <a href="https://github.com/Jambrisak" target="_blank">
-                                <i class="fa-brands fa-square-github">  
-                                </i>
-                                <span class="text">
-                                    //Jambrisak
-                                </span>
-                            </a>
+                    <!-- fact item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-coffee-cup"></i>
+                        <div class="details">
+                            <h3>6798</h3>
+                            <p>Cup's of coffee</p>
+                        </div>
+                    </div>
+                    <!-- fact item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-thought"></i>
+                        <div class="details">
+                            <h3>428</h3>
+                            <p>Sleepless Nights</p>
+                        </div>
+                    </div>
+                    <!-- fact item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-book"></i>
+                        <div class="details">
+                            <h3>690</h3>
+                            <p>Days learning</p>
                         </div>
                     </div>
                 </div>
             </div>
-    <!--Contact form section-->
-            <div class="formBx">
-                <form action="https://formsubmit.co/eeda1aba5d324bc3ff93692df24c69c6" method="POST">
-                    <h3>Message Me</h3>
-                    <input type="text" name ="fname" placeholder="Full Name" required>
-                    <input type="email" name ="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send" class="send-btn">
-                </form>
+        </section>
+        <!--=============== Services ===============-->
+        <section class="services section">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Services</h2>
+                <div class="row">
+                    <!-- service item -->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(108,108,229);">
+                            <img src="https://img.icons8.com/external-flaticons-flat-circular-flat-icons/91/000000/external-ux-media-agency-flaticons-flat-circular-flat-icons.png" alt="">
+                            <h3>UI/UX design</h3>
+                            <p>My aim and goal is to create the best UI/UX for you as a client, so you can be a part of the development.</p>
+                        </div>
+                    </div>
+                    <!-- service item -->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(249,215,76);">
+                            <img src="https://img.icons8.com/clouds/100/000000/code.png" alt="">
+                            <h3>Web Development</h3>
+                            <p>My aim is to deliver a fast and responsive Web product that will satisfy the customer.</p>
+                        </div>
+                    </div>
+                    <!-- service item -->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(249,123,139);">
+                            <img src="https://img.icons8.com/nolan/91/database.png" alt="">
+                            <h3>Database</h3>
+                            <p>My aim is to help the customer with deploying a functional database fast and with ease.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text padd-15">
+                    <p>Looking for a custom job? <a href="#contact">Click here</a> to contact me! 👋</p>
+                </div>
+            </div>
+        </section>
+        <!--=============== Experience ===============-->
+        <section class="section" id="experience">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Experience</h2>
+                <div class="row">
+                    <!-- education -->
+                    <div class="education padd-15">
+                        <div class="row">
+                            <div class="timeline-box">
+                                <div class="timeline">
+                                    <!-- timeline item -->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2014 - 2019
+                                        </h3>
+                                        <h3 class="timeline-title">Academic Degree</h3>
+                                        <p class="timeline-text">I'm a qualified Religion/ History teacher for ages 13 - 19.</p>
+                                    </div>
+                                     <!-- timeline item -->
+                                     <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2022 - present
+                                        </h3>
+                                        <h3 class="timeline-title">Online Degree</h3>
+                                        <p class="timeline-text">I have a degree From Code Institute in Full Stack Software Development.</p>
+                                    </div>
+                                    <!-- timeline item -->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2022 - present
+                                        </h3>
+                                        <h3 class="timeline-title">Online Degree</h3>
+                                        <p class="timeline-text">I have a degree From Meta (Coursera) in Front-End Development.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- experience -->
+                    <div class="experience padd-15">
+                        <div class="row">
+                            <div class="timeline-box">
+                                <div class="timeline">
+                                    <!-- timeline item -->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-briefcase timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2020 - 2022
+                                        </h3>
+                                        <h3 class="timeline-title">Teacher</h3>
+                                        <p class="timeline-text">I worked at a school in Malmö, Sweden for 2 years before quitting to focus on becoming a developer.</p>
+                                    </div>
+                                     <!-- timeline item -->
+                                     <div class="timeline-item">
+                                        <i class="lni lni-briefcase timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2020 - 2022
+                                        </h3>
+                                        <h3 class="timeline-title">IT Manager</h3>
+                                        <p class="timeline-text">At the same time I worked as a teacher I was also the schools IT Manager.</p>
+                                    </div>
+                                     <!-- timeline item -->
+                                     <div class="timeline-item">
+                                        <i class="lni lni-briefcase timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2023 - 
+                                        </h3>
+                                        <h3 class="timeline-title">Junior Software Developer</h3>
+                                        <p class="timeline-text">At the start of 2023, I will start my first job as a developer at MDriven AB</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== Portfolio ===============-->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Portfolio</h2>
+                <div class="row">
+                    <div class="portfolio-filter padd-15">
+                        <div class="portfolio-filter-inner">
+                            <button type="button" class="active" data-filter="all">Projects</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                     <!-- portfolio item -->
+                     <div class="portfolio-item padd-15" data-category="creative">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="https://img.icons8.com/external-smashingstocks-thin-outline-color-smashing-stocks/200/000000/external-quiz-education-smashingstocks-thin-outline-color-smashing-stocks.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Completed Projects</span>
+                            <h3 class="portfolio-item-title"><a href="https://jambrisak.github.io/My-JavaScript-Project/">A History Quiz</a></h3>
+                            <span class="more-button">&hellip;</span>
+                        </div>
+                    </div>
+                     <!-- portfolio item -->
+                     <div class="portfolio-item padd-15" data-category="creative">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="https://img.icons8.com/officel/200/000000/battleship.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Upcoming Project</span>
+                            <h3 class="portfolio-item-title"><a href="#">A Python Game</a></h3>
+                            <span class="more-button">&hellip;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== Contact ===============-->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Contact us</h2>
+                <div class="row">
+                    <!-- contact box -->
+                    <div class="contact-box padd-15">
+                        <div class="contact-data">
+                             <!-- contact information -->
+                             <div class="contact-information">
+                                <h3 class="contact-subtitle">Write me by mail</h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-user contact-icon"></i>
+                                    philip@jambrisak.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- contact form -->
+                    <form action="https://formsubmit.co/eeda1aba5d324bc3ff93692df24c69c6" class="contact-form padd-15">
+                        <div class="contact-inputs">
+                            <!-- contact content -->
+                            <div class="contact-content">
+                                <input type="email" class="contact-input">
+                                <label for="" class="contact-label">Email</label>
+                                <span></span>
+                            </div>
+                            <!-- contact content -->
+                            <div class="contact-content">
+                                <input type="text" class="contact-input">
+                                <label for="" class="contact-label">Subject</label>
+                                <span></span>
+                            </div>
+                            <!-- contact content -->
+                            <div class="contact-content contact-area">
+                                <textarea name="" id="" cols="30" rows="10" class="contact-input"></textarea>
+                                <label for="" class="contact-label">Message</label>
+                                <span></span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-default">Send Message</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--=============== Footer ===============-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-text padd-15">
+                    <p>&copy; Philip Jambrisak</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!--=============== Theme Customize ===============-->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize your view</h2>
+            <p>Manage your font size, color, and background</p>
+            <!-- font size -->
+            <div class="font-size">
+                <h3>Font Size</h3>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2"></span>
+                        <span class="font-size-3 active"></span>
+                        <span class="font-size-4"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+            <!-- color -->
+            <div class="color">
+                <h3>Color</h3>
+                <div class="choose-color">
+                    <span class="color-1"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3 active"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+            <!-- background -->
+            <div class="background">
+                <h3>background</h3>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="bg-2">Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Dark</h5>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    <!--Footer section-->
-    <div class="footer">
-        <p>copyright &copy;Philip Jambrisak, 2022. All Right Reserved</p>
     </div>
-<!--javascript taken from udemy : Course-->
-<script>
-    window.addEventListener('scroll', function(){
-        var header = document.querySelector('header');
-        header.classList.toggle('sticky', window.scrollY > 0);
-    });
-    //Hamburger menu
-    function toggleMenu(){
-        var menuToggle = document.querySelector('.toggle');
-        var menu = document.querySelector('.menu');
-        menuToggle.classList.toggle('active');
-        menu.classList.toggle('active');
-    };
-</script>
-<script src="https://kit.fontawesome.com/adea6e81d4.js" crossorigin="anonymous"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
