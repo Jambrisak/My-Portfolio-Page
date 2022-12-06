@@ -1,409 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link type="image/x-icon" sizes="16x16" rel="icon" href="./assets/images/favicon/icons8-working-with-a-laptop-windows-11-color-16.png">
-    <link type="image/x-icon" sizes="32x32" rel="icon" href="./assets/images/favicon/icons8-working-with-a-laptop-windows-11-color-32.png">
-    <link type="image/x-icon" sizes="96x96" rel="icon" href="./assets/images/favicon/icons8-working-with-a-laptop-windows-11-color-96.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--=============== LINE ICONS ===============-->
-    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Responsive portfolio website - Philip Jambrisak</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <script src="./assets/js/script.js" defer></script>
+
+  <title>Philip - My Portfolio</title>
 </head>
-<body>
-    <!--=============== HEADER ===============-->
-    <header class="header" id="header">
-        <!-- nav -->
-        <nav class="nav container padd-15">
-            <!-- nav logo -->
-            <a href="#" class="nav-logo">
-                <h2>Philip</h2>
-            </a>
-            <!-- nav menu -->
-            <div class="nav-menu" id="nav-menu">
-                <!-- nav list -->
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link active-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#experience" class="nav-link">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                </ul>
-                <!-- nav close -->
-                <div class="nav-close" id="nav-close">
-                    <i class="lni lni-close"></i>
-                </div>
-            </div>
-            <!-- nav btn -->
-            <div class="nav-btns">
-                <!-- theme change btn -->
-                <i class="lni lni-pallet change-theme" id="theme-button"></i>
-                <!-- toggle btn -->
-                <div class="nav-toggle" id="nav-toggle">
-                    <i class="lni lni-grid-alt"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!--=============== MAIN ===============-->
-    <main class="main-content">
-        <!--=============== HOME ===============-->
-        <section class="home" id="home">
-            <div class="container">
-                <!-- intro -->
-                <div class="intro">
-                    <!-- avatar image -->
-                    <img src="./assets/images/Philip.png" width="150" height="150" alt="Bolby">
-                    <!-- info -->
-                    <h1>Philip Jambrisak</h1>
-                    <span>I'm a <span class="info-text">Full-Stack Developer</span></span>
-                    <!-- social icons -->
-                    <ul class="social-icons">
-                        <li><a href="https://www.linkedin.com/in/philip-jambrisak/"><i class="lni lni-linkedin-original"></i></a></li>
-                        <li><a href="https://github.com/Jambrisak"><i class="lni lni-github-original"></i></a></li>
-                    </ul>
-                    <!-- button -->
-                    <div>
-                        <a href="mailto:philip@jambrisak.com" class="btn btn-default">Hire me</a>
-                    </div>
-                    <!-- scroll down mouse wheel -->
-                    <div class="scroll-down">
-                        <a href="#" class="mouse-wrapper">
-                            <span>Scroll Down</span>
-                            <span class="mouse">
-                                <span class="wheel"></span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=============== About ===============-->
-        <section class="about section" id="about">
-            <div class="container">
-                <!-- section title -->
-                <h2 class="section-title padd-15">About Me</h2>
-                <div class="row">
-                    <div class="about-img padd-15">
-                        <!-- avatar img -->
-                        <img src="./assets/images/Philip.png" alt="">
-                    </div>
-                    <div class="about-content padd-15">
-                        <div class="rounded">
-                            <div class="row">
-                                <div class="about-text padd-15">
-                                    <!-- about text -->
-                                    <p>Hello my name is Philip Jambrisak, i'm a full-stack developer from a city called Malmö, Sweden.
-                                    <br>I'm a recent graduate from Code Institute with a diploma in full-stack software development.
-                                    <br>When 2023 begins, I will also begin my first developer position I will be working as a Junior Software Developer at MDriven AB.</p>
-                                    <div>
-                                        <a href="./assets/docs/Resume-Philip-Jambrisak.pdf" class="btn btn-default">Download CV</a>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15">
-                                    <div class="row">
-                                        <!-- skill item -->
-                                        <div class="skill-item">
-                                            <h4>Development</h4>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 95%; background: rgb(255,209,92);"></div>
-                                                <div class="skill-percent">95%</div>
-                                            </div>
-                                        </div>
-                                        <!-- skill item -->
-                                        <div class="skill-item">
-                                            <h4>UI/UX design</h4>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 85%; background: rgb(108,108,229);"></div>
-                                                <div class="skill-percent">85%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item">
-                                            <h4>Back End/Front End</h4>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 75%; background: rgb(229, 108, 108);"></div>
-                                                <div class="skill-percent">75%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- fact item -->
-                    <div class="fact-item padd-15">
-                        <i class="lni lni-thumbs-up"></i>
-                        <div class="details">
-                            <h3>5+</h3>
-                            <p>Project's done</p>
-                        </div>
-                    </div>
-                    <!-- fact item -->
-                    <div class="fact-item padd-15">
-                        <i class="lni lni-coffee-cup"></i>
-                        <div class="details">
-                            <h3>6798</h3>
-                            <p>Cup's of coffee</p>
-                        </div>
-                    </div>
-                    <!-- fact item -->
-                    <div class="fact-item padd-15">
-                        <i class="lni lni-thought"></i>
-                        <div class="details">
-                            <h3>428</h3>
-                            <p>Sleepless Nights</p>
-                        </div>
-                    </div>
-                    <!-- fact item -->
-                    <div class="fact-item padd-15">
-                        <i class="lni lni-book"></i>
-                        <div class="details">
-                            <h3>690</h3>
-                            <p>Days learning</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=============== Services ===============-->
-        <section class="services section">
-            <div class="container">
-                <!-- section title -->
-                <h2 class="section-title padd-15">Services</h2>
-                <div class="row">
-                    <!-- service item -->
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner" style="background: rgb(108,108,229);">
-                            <img src="https://img.icons8.com/external-flaticons-flat-circular-flat-icons/91/000000/external-ux-media-agency-flaticons-flat-circular-flat-icons.png" alt="">
-                            <h3>UI/UX design</h3>
-                            <p>My aim and goal is to create the best UI/UX for you as a client, so you can be a part of the development.</p>
-                        </div>
-                    </div>
-                    <!-- service item -->
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner" style="background: rgb(249,215,76);">
-                            <img src="https://img.icons8.com/clouds/100/000000/code.png" alt="">
-                            <h3>Web Development</h3>
-                            <p>My aim is to deliver a fast and responsive Web product that will satisfy the customer.</p>
-                        </div>
-                    </div>
-                    <!-- service item -->
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner" style="background: rgb(249,123,139);">
-                            <img src="https://img.icons8.com/nolan/91/database.png" alt="">
-                            <h3>Database</h3>
-                            <p>My aim is to help the customer with deploying a functional database fast and with ease.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text padd-15">
-                    <p>Looking for a custom job? <a href="mailto:philip@jambrisak.com">Click here</a> to contact me! 👋</p>
-                </div>
-            </div>
-        </section>
-        <!--=============== Experience ===============-->
-        <section class="section" id="experience">
-            <div class="container">
-                <!-- section title -->
-                <h2 class="section-title padd-15">Experience</h2>
-                <div class="row">
-                    <!-- education -->
-                    <div class="education padd-15">
-                        <div class="row">
-                            <div class="timeline-box">
-                                <div class="timeline">
-                                    <!-- timeline item -->
-                                    <div class="timeline-item">
-                                        <i class="lni lni-graduation timeline-icon"></i>
-                                        <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2014 - 2019
-                                        </h3>
-                                        <h3 class="timeline-title">Academic Degree</h3>
-                                        <p class="timeline-text">I'm a qualified Religion/ History teacher for ages 13 - 19.</p>
-                                    </div>
-                                     <!-- timeline item -->
-                                     <div class="timeline-item">
-                                        <i class="lni lni-graduation timeline-icon"></i>
-                                        <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2022 - present
-                                        </h3>
-                                        <h3 class="timeline-title">Online Degree</h3>
-                                        <p class="timeline-text">I have a degree From Code Institute in Full Stack Software Development.</p>
-                                    </div>
-                                    <!-- timeline item -->
-                                    <div class="timeline-item">
-                                        <i class="lni lni-graduation timeline-icon"></i>
-                                        <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2022 - present
-                                        </h3>
-                                        <h3 class="timeline-title">Online Degree</h3>
-                                        <p class="timeline-text">I have a degree From Meta (Coursera) in Front-End Development.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- experience -->
-                    <div class="experience padd-15">
-                        <div class="row">
-                            <div class="timeline-box">
-                                <div class="timeline">
-                                    <!-- timeline item -->
-                                    <div class="timeline-item">
-                                        <i class="lni lni-briefcase timeline-icon"></i>
-                                        <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2020 - 2022
-                                        </h3>
-                                        <h3 class="timeline-title">Teacher</h3>
-                                        <p class="timeline-text">I worked at a school in Malmö, Sweden for 2 years before quitting to focus on becoming a developer.</p>
-                                    </div>
-                                     <!-- timeline item -->
-                                     <div class="timeline-item">
-                                        <i class="lni lni-briefcase timeline-icon"></i>
-                                        <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2020 - 2022
-                                        </h3>
-                                        <h3 class="timeline-title">IT Manager</h3>
-                                        <p class="timeline-text">At the same time I worked as a teacher I was also the schools IT Manager.</p>
-                                    </div>
-                                     <!-- timeline item -->
-                                     <div class="timeline-item">
-                                        <i class="lni lni-briefcase timeline-icon"></i>
-                                        <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2023 - 
-                                        </h3>
-                                        <h3 class="timeline-title">Junior Software Developer</h3>
-                                        <p class="timeline-text">At the start of 2023, I will start my first job as a developer at MDriven AB</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=============== Portfolio ===============-->
-        <section class="portfolio section" id="portfolio">
-            <div class="container">
-                <!-- section title -->
-                <h2 class="section-title padd-15">Portfolio</h2>
-                <div class="row">
-                    <div class="portfolio-filter padd-15">
-                        <div class="portfolio-filter-inner">
-                            <button type="button" class="active" data-filter="all">Projects</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                     <!-- portfolio item -->
-                     <div class="portfolio-item padd-15" data-category="creative">
-                        <div class="portfolio-item-inner">
-                            <div class="portfolio-item-thumbnail">
-                                <img src="https://img.icons8.com/external-smashingstocks-thin-outline-color-smashing-stocks/200/000000/external-quiz-education-smashingstocks-thin-outline-color-smashing-stocks.png" alt="">
-                                <div class="mask"></div>
-                            </div>
-                            <span class="term">Completed Projects</span>
-                            <h3 class="portfolio-item-title"><a href="https://jambrisak.github.io/My-JavaScript-Project/">A History Quiz</a></h3>
-                            <span class="more-button">&hellip;</span>
-                        </div>
-                    </div>
-                     <!-- portfolio item -->
-                     <div class="portfolio-item padd-15" data-category="creative">
-                        <div class="portfolio-item-inner">
-                            <div class="portfolio-item-thumbnail">
-                                <img src="https://img.icons8.com/officel/200/000000/battleship.png" alt="">
-                                <div class="mask"></div>
-                            </div>
-                            <span class="term">Upcoming Project</span>
-                            <h3 class="portfolio-item-title"><a href="#">A Python Game</a></h3>
-                            <span class="more-button">&hellip;</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--=============== Contact ===============-->
 
-        <!--=============== Footer ===============-->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-text padd-15">
-                    <p>&copy; Philip Jambrisak</p>
-                </div>
-            </div>
-        </footer>
-    </main>
-    <!--=============== Theme Customize ===============-->
-    <div class="customize-theme">
-        <div class="card">
-            <h2>Customize your view</h2>
-            <p>Manage your font size, color, and background</p>
-            <!-- font size -->
-            <div class="font-size">
-                <h3>Font Size</h3>
-                <div>
-                    <h6>Aa</h6>
-                    <div class="choose-size">
-                        <span class="font-size-1"></span>
-                        <span class="font-size-2"></span>
-                        <span class="font-size-3 active"></span>
-                        <span class="font-size-4"></span>
-                    </div>
-                    <h3>Aa</h3>
-                </div>
-            </div>
-            <!-- color -->
-            <div class="color">
-                <h3>Color</h3>
-                <div class="choose-color">
-                    <span class="color-1"></span>
-                    <span class="color-2"></span>
-                    <span class="color-3 active"></span>
-                    <span class="color-4"></span>
-                    <span class="color-5"></span>
-                </div>
-            </div>
-            <!-- background -->
-            <div class="background">
-                <h3>background</h3>
-                <div class="choose-bg">
-                    <div class="bg-1 active">
-                        <span></span>
-                        <h5 for="bg-1">Light</h5>
-                    </div>
-                    <div class="bg-2">
-                        <span></span>
-                        <h5 for="bg-2">Dim</h5>
-                    </div>
-                    <div class="bg-3">
-                        <span></span>
-                        <h5 for="bg-3">Dark</h5>
-                    </div>
-                </div>
-            </div>
+<body>
+
+  <div class="color"></div>
+
+  <header class="header">
+    <img src="./assets/images/Philip.png"
+      alt="Tim portrait" class="logo">
+    <a href="mailto:jambrisak@gmail.com" class="btn btn--contact">Contact me</a>
+  </header>
+
+  <main class="main">
+    <section class="intro">
+      <h1 class="first-heading">Hello <span class="emoji">👋</span></h1>
+      <p class="text"><span class="u-bold">I'm <span class="u-yellow">Philip</span></span>, <i>a full-stack developer</i>
+        <span class="text--second">based in Sweden.</span>
+      </p>
+    </section>
+
+    <section class="work">
+      <div class="top">
+        <h2 class="second-heading">My work</h2>
+        <ul class="filters">
+          <li class="filter-item">
+            <button class="filter-btn filter-btn--active">All</button>
+          </li>
+          <li class="filter-item">
+            <button class="filter-btn">Completed</button>
+          </li>
+          <li class="filter-item">
+            <button class="filter-btn">Upcoming</button>
+          </li>
+          <li class="filter-item">
+            <button class="filter-btn">Next Projects</button>
+          </li>
+        </ul>
+      </div>
+
+      <section class="grid">
+        <div class="project">
+          <section class="project-info">
+            <h3 class="third-heading">Coming Soon</h3>
+            <p class="description">In the near future, you can expect to see a sink the battleship Python game here.</p>
+            <ul class="technologies">
+              <li class="technology">Python</li>
+            </ul>
+          </section>
+          <img src="./assets/images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg" height="954px" width="600" q="100" alt="Project"
+            class="grid-img">
         </div>
-    </div>
-    <!--=============== SWIPER JS ===============-->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    
-    <!--=============== JS ===============-->
-    <script src="./assets/js/main.js"></script>
+        <div class="project">
+          <section class="project-info">
+            <a href="https://jambrisak.github.io/Quiz-Application/">
+              <h3 class="third-heading">A History Quiz</h3></a>
+            <p class="description">A fun history quiz for students between ages 10 - 16.</p>
+            <ul class="technologies">
+              <li class="technology">HTML</li>
+              <li class="technology">CSS</li>
+              <li class="technology">JavaScript</li>
+            </ul>
+          </section>
+          <img src="./assets/images/nguyen-dang-hoang-nhu-cbEvoHbJnIE-unsplash.jpg" height="650" width="600" q="100"
+            alt="Project" class="grid-img">
+        </div>
+        <div class="project">
+          <section class="project-info">
+            <h3 class="third-heading">Coming Soon</h3>
+            <p class="description">In the near future, you can expect to see a fully functioning online shopping page here.</p>
+            <ul class="technologies">
+              <li class="technology">CSS</li>
+              <li class="technology">JavaScript</li>
+              <li class="technology">Upcoming</li>
+            </ul>
+          </section>
+          <img src="./assets/images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg" height="954px" width="600" q="100" alt="Project"
+            class="grid-img">
+        </div>
+        <div class="project">
+          <section class="project-info">
+            <h3 class="third-heading">Coming Soon</h3>
+            <p class="description">In the near future, you can expect to see a full stack application.</p>
+            <ul class="technologies">
+              <li class="technology">CSS</li>
+              <li class="technology">JavaScript</li>
+              <li class="technology">Upcoming</li>
+            </ul>
+          </section>
+          <img src="./assets/images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg" height="954px" width="600" q="100" alt="Project"
+            class="grid-img">
+        </div>
+        <div class="project">
+          <section class="project-info">
+            <h3 class="third-heading">Coming Soon</h3>
+            <p class="description">In the near future, you can expect to see a full stack application.</p>
+            <ul class="technologies">
+              <li class="technology">CSS</li>
+              <li class="technology">JavaScript</li>
+              <li class="technology">Upcoming</li>
+            </ul>
+          </section>
+          <img src="./assets/images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg" height="954px" width="600" q="100" alt="Project"
+            class="grid-img">
+        </div>
+        <div class="project">
+          <section class="project-info">
+            <h3 class="third-heading">Coming Soon</h3>
+            <p class="description">In the near future, you can expect to see a full stack application.</p>
+            <ul class="technologies">
+              <li class="technology">CSS</li>
+              <li class="technology">JavaScript</li>
+              <li class="technology">Upcoming</li>
+            </ul>
+          </section>
+          <img src="./assets/images/huma-kabakci-oRk4Ep65tRc-unsplash.jpg" height="954px" width="600" q="100"
+            alt="Project" class="grid-img">
+        </div>
+
+        <div class="fade"></div>
+      </section>
+    </section>
+
+    <a href="./assets/docs/Philip_Jambrisak_CV.pdf" download class="btn btn--download">Download <span class="u-bolder">CV</span></a>
+
+    <ul class="links">
+      <li class="link-item">
+        <a href="https://www.linkedin.com/in/philip-jambrisak/" class="link" target="_blank">
+          <img class="link-img"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/72px-LinkedIn_icon_circle.svg.png?20210301220643"
+            alt="LinkedIn">
+        </a>
+      </li>
+      <li class="link-item">
+        <a href="https://github.com/Jambrisak" class="link" target="_blank">
+          <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20">
+            <defs>
+              <image width="32" height="32" id="img1"
+                href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAAXNSR0IB2cksfwAAAEtQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////g5kLBwAAABl0Uk5TADB/v8//759vPyCvUNAQkIDgYMCw8ECgcJ20HzUAAACpSURBVHiczZLLEoMgDEV5GNuiBQoW+v9fWu2gCCaw7d2eM3pDwtgfhQs5wCilvIk190eF1QRVRnHmc423zCfhiQlT5hrjALz9BwBzCBYXhkN44QKofUaCg0uCowTfrrAmCQsppBJvUgg/HkienoquEHsdVUfoThk6wrJvgpoib9s3G2z3gh5U/sBqmCu3rIiK1XtHVocXV+P1RSiWGjHO9Mf4aLc4DFP5AoecDq2cFzzPAAAAAElFTkSuQmCC" />
+              <image width="32" height="31" id="img2"
+                href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AAAAAXNSR0IB2cksfwAAASlQTFRFAAAAFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWFxUWg1IqAAAAAGN0Uk5TABRjpNLz/zGp+w+b/t5C8TMR39atnlwH6ME0MigCrjUY/F9n4xLiYvbh29zyFtBendEEWY8N9asZl4o/wvqqZQM5aB73c8kBsH44ITw+xLkQekYVbx/DdWB4CLdk6usM2ux0Vi2hMAAAAY1JREFUeJxtkmdDwjAQho8CsVYQoUDZFhEHIKAsUREHWnEg7oEK+P9/hMml1A7uA3d9nzdHLgmAES7B7fES4vW4BRc4Y0FcJEYsigs2LC35iCV8S5JluZ84wm9qshxwckICyzO+MpdTxwrnwRD9kMMWVyAs099QEA0RpkRBEWJ0xHicjhoTFIgyNcJ4Apck2SipNBPSKTZAEuUErTJYrdrPZRXlDICaxWrNblhDOatCDov1vN2Q30CQAxHzpvPsNxGIIGMnyWmQ8L9l2GJp28kBthnZAmxUmGcoIuKG0jxDiRt42nHyHX1pGXPFaaggKEMV8+6ene/tIqhCjV9f3W6oc70GjSavWqoZ77e42mwAtAk5ODwipHPcTZxg89OzTEd/F236fd4jvgvlEu9OYwbtyng3vXMm9Gl1fcPu5pb3vzMMfb7fASH3MBQeHk+44WnGB/psKj3UZ9MOhzovGvt+KRDy+vb+8WkxFF7+1+RHKA3NhpHlDWlf31bDT1ezndz4YjJVeKlMJ7/jmf4H0HIrIWAwTZgAAAAASUVORK5CYII=" />
+            </defs>
+            <style>
+            </style>
+            <use id="Layer 1" href="#img1" x="0" y="0" />
+            <use id="Background" href="#img2" x="0" y="0" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </main>
+
+  <footer class="footer">
+    <small class="copyright">&copy; Copyright 2022. All rights reserved.</small>
+    <a href="mailto:tim@gmail.com" class="email">jambrisak@gmail.com</a>
+  </footer>
+
 </body>
+
 </html>
