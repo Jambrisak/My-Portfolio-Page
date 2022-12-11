@@ -60,13 +60,15 @@ filtersEl.addEventListener('click', e => {
     projectEl6.style.opacity = '0';
     projectEl6.style.transform = 'scale(0)';
 
-    projectEl2.style.transform = 'translate(-325px, -1px)';
+    projectEl2.style.transform = 'translate(0px, 0px)';
     projectEl2.style.opacity = '1';
+    projectEl1.style.transform = 'translate(-1px, -1px)';
+    projectEl1.style.opacity = '1';
   } else if (filterText === 'Upcoming') {
+    projectEl1.style.opacity = '0';
+    projectEl1.style.transform = 'scale(0)';
     projectEl2.style.opacity = '0';
     projectEl2.style.transform = 'scale(0)';
-    projectEl3.style.opacity = '0';
-    projectEl3.style.transform = 'scale(0)';
     projectEl4.style.opacity = '0';
     projectEl4.style.transform = 'scale(0)';
     projectEl5.style.opacity = '0';
@@ -74,18 +76,16 @@ filtersEl.addEventListener('click', e => {
     projectEl6.style.opacity = '0';
     projectEl6.style.transform = 'scale(0)';
 
-    projectEl1.style.transform = 'translate(-1px, -1px)';
-    projectEl1.style.opacity = '1';
+    projectEl3.style.transform = 'translate(-655px, -1px)';
+    projectEl3.style.opacity = '1';
   } else if (filterText === 'Next Projects') {
     projectEl1.style.opacity = '0';
     projectEl1.style.transform = 'scale(0)';
     projectEl2.style.opacity = '0';
     projectEl2.style.transform = 'scale(0)';
+    projectEl3.style.opacity = '0';
+    projectEl3.style.transform = 'scale(0)';
 
-    projectEl3.style.opacity = '1';
-    projectEl3.style.transform = 'scale(1)';
-    projectEl3.style.transform = 'translate(-650px, -1px)';
-    projectEl4.style.opacity = '1';
     projectEl4.style.transform = 'scale(1)';
     projectEl4.style.transform = 'translate(650px, -500px)';
     projectEl5.style.opacity = '1';
