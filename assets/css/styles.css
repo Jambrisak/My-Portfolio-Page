@@ -306,7 +306,9 @@ body::-webkit-scrollbar {
   margin-top: 60px;
   animation: fade-up 0.6s 0.2s backwards;
 }
-
+.work .title{
+  margin-bottom: 25px;
+}
 /* TOP */
 .top {
   display: flex;
