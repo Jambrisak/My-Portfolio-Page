@@ -160,6 +160,10 @@ body::-webkit-scrollbar {
   margin-bottom: 90px;
   padding: 0 25px;
 }
+.main .profile-pic{
+  width: 400px;
+  height: 400px;
+}
 
 /* INTRO */
 .intro {
@@ -193,7 +197,110 @@ body::-webkit-scrollbar {
 .text--second {
   display: block;
 }
-
+/*RESUME*/
+.resume{
+  padding: 5rem 0 2.5rem 0;
+}
+.resume .item{
+  padding: 0 2.5rem;
+  margin: 2rem;
+  border-left: 1px solid #fff;
+  position: relative;
+}
+.resume .item > span{
+  background-color: #FFD600;
+  border-radius: 15px;
+  padding: 0.25rem 0.7rem;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.resume .item h2{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0.50rem 0;
+}
+.resume .item h2 span{
+  font-size: 1rem;
+  color: #d0d0d0;
+}
+.resume .item .text{
+  font-size: 1rem;
+  padding-bottom: 0;
+}
+.resume .icon{
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background: #FFD600;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -25px;
+  color: #000;
+}
+/*SKILLS*/
+.skills{
+  padding: 5rem 0 2.5rem 0;
+}
+.skills > .text{
+  width: 70%;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+.skills .row{
+  margin: 1rem 0;
+}
+.skills .item{
+  padding: 0.5rem 0;
+  margin: 0.3rem 0;
+}
+.skills .item-text{
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+}
+.skills .item-text span:last-child{
+  position: absolute;
+}
+.skills .item-text .w-90{
+  margin-left: 90%;
+}
+.skills .item-text .w-75{
+  margin-left: 75%;
+}
+.skills .item-text .w-65{
+  margin-left: 65%;
+}
+.progress{
+  margin: 0.8rem 0;
+  border-radius: 10px;
+  height: 6px;
+  width: 100%;
+  background-color: #000;
+  overflow: hidden;
+}
+.progress-bar{
+  background-color: #FFD600;
+  height: 100%;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.progress-bar.w-90{
+  width: 90%;
+}
+.progress-bar.w-75{
+  width: 75%;
+}
+.progress-bar.w-65{
+  width: 65%;
+}
 /* WORK */
 .work {
   margin-top: 60px;
